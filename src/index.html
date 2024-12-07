@@ -37,6 +37,7 @@
               layersSvg: "url('/src/assets/layersSvg.svg')",
               downloadSvg: "url('/src/assets/downloadSvg.svg')",
               globeSvg: "url('/src/assets/globeSvg.svg')",
+              programmingSvg: "url('/src/assets/programmingSvg.svg')",
             },
             colors: {
               projectBlue: "#003ADF",
@@ -48,6 +49,7 @@
     </script>
   </head>
   <body class="flex w-full h-[100vh]">
+    <div class=" w-full sm:w-[240px] h-full font-robotoMono flex flex-col items-center justify-between"></div>
     <nav class="bg-blue-gradiente w-full sm:w-[240px] h-full font-robotoMono fixed box-element-shadow flex flex-col items-center justify-between">
       <div>
        <div class="flex flex-col justify-center items-center">
@@ -117,7 +119,21 @@
           </p>
         </div>
       </section>
-      <section class="w-full h-full"></section>
+      <section class="w-full h-full px-24">
+        <div class="pt-24 pl-2">
+          <h2 class="text-black text-3xl font-medium">Sobre Mim</h2>
+          <div class="bg-projectBlue w-[164px] h-[8px] rounded-full"></div>
+        </div>
+        <div class="pt-32 pl-24 flex flex-row gap-4">
+          <img src="assets/programmingSvg.svg" alt="Desenho de uma pessoa programando">
+          <div class="flex justify-center items-center">
+            <p class="text-xl text-projectBlack font-medium">Sou estudante de Ciência da Computação no Instituto Federal de Educação, Ciência e Tecnologia do Maranhão (IFMA), com previsão de conclusão em 2028. Tenho experiência em desenvolvimento de software, trabalhando em projetos que utilizam tecnologias como React, Angular, Java e Spring Boot.</p>
+          </div>
+        </div>
+        <div class="pt-32 pl-24">
+          <p class="text-xl text-projectBlack font-medium">Valorizo o aprendizado contínuo e estou sempre em busca de desafios que possam expandir meus conhecimentos, com foco no desenvolvimento de software, tanto em Frontend quanto Backend. Minha experiência em projetos tem me permitido aprimorar habilidades técnicas e interpessoais, como trabalho em equipe e resolução de problemas.</p>
+        </div>
+      </section>
     </main>
 
   </body>
