@@ -56,6 +56,7 @@
               vortexbankImg: "url('assets/vortexbankImg.png')",
               adaecommerceImg: "url('assets/adaecommerceImg.png')",
               tripsterImg: "url('assets/tripsterImg.png')",
+              arrowupSvg: "url('assets/arrowupSvg.svg')",
             },
             colors: {
               projectBlue: "#003ADF",
@@ -69,6 +70,7 @@
   </head>
   <body class="flex w-full h-[100vh] font-robotoMono">
     <div class=" sm:w-[240px] h-full font-robotoMono flex flex-col items-center justify-between"></div>
+   
     <nav class="bg-blue-gradiente sm:w-[240px] h-full font-robotoMono fixed box-element-shadow flex flex-col items-center justify-between">
       <div>
        <div class="flex flex-col justify-center items-center">
@@ -112,13 +114,13 @@
        </div>
       </div>
       <div class="flex flex-col justify-center items-center">
-       <div class="bg-projectBlue flex flex-row justify-center items-center w-[148px] mb-10 rounded-lg p-2 box-element-shadow">
+       <a class="bg-projectBlue flex flex-row justify-center items-center w-[148px] mb-10 rounded-lg p-2 box-element-shadow duration-300 hover:bg-[#0005BF] hover:cursor-pointer">
          <div class="w-[36px] h-[36px] bg-downloadSvg bg-no-repeat"></div>
          <div class="text-white">Currículo</div>
-       </div>
-       <div class="flex flex-row gap-1 justify-center sm:justify-start mb-10">
+       </a>
+       <div class="flex flex-row gap-1 justify-center sm:justify-start mb-10 hover:font-bold">
          <div class="w-[24px] h-[24px] bg-globeSvg bg-no-repeat"></div>
-         <span class="text-white text-md text-element-shadow">English Version</span>
+         <span class="text-white text-md text-element-shadow hover:text-projectBlue">English Version</span>
        </div>
        <div class="text-center mb-4">
          <p class="text-white">
@@ -129,9 +131,13 @@
       </div>
      </nav>
  
+     <a href="#hero" id="back-to-top" class="w-[48px] h-[48px] bg-projectBlue fixed z-10 rounded-full flex justify-center items-center box-element-shadow right-4 bottom-4 md:right-6 md:bottom-6">
+      <div class="w-[40px] h-[40px] bg-arrowupSvg"></div>
+    </a>
+
      <main class="w-full h-full font-robotoMono ">
 
-      <section class="bg-background-blue bg-cover bg-no-repeat w-full h-full flex justify-center items-center text-white parallax">
+      <section class="bg-background-blue bg-cover bg-no-repeat w-full h-full flex justify-center items-center text-white parallax" id="hero">
         <div class="m-auto gap-4 flex flex-col">
           <h1 class="text-4xl sm:text-6xl font-bold text-element-shadow">Kauan Herbst</h1>
           <p class="text-2xl sm:text-3xl font-medium text-element-shadow w-full text-center sm:text-left">
