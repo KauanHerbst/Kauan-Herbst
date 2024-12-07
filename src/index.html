@@ -68,47 +68,47 @@
     </script>
   </head>
   <body class="flex w-full h-[100vh] font-robotoMono">
-    <div class=" w-full sm:w-[240px] h-full font-robotoMono flex flex-col items-center justify-between"></div>
-    <nav class="bg-blue-gradiente w-full sm:w-[240px] h-full font-robotoMono fixed box-element-shadow flex flex-col items-center justify-between">
+    <div class=" sm:w-[240px] h-full font-robotoMono flex flex-col items-center justify-between"></div>
+    <nav class="bg-blue-gradiente sm:w-[240px] h-full font-robotoMono fixed box-element-shadow flex flex-col items-center justify-between">
       <div>
        <div class="flex flex-col justify-center items-center">
          <div class="w-[96px] h-[96px] bg-white rounded-full mt-10 border-4 border-projectBlue box-element-shadow bg-profile bg-cover bg-no-repeat"></div>
          <span class="text-xl text-white mt-3 text-element-shadow font-medium">Kauan Herbst</span>
        </div>
        <div class="mt-5 flex gap-4 justify-center sm:justify-start">
-         <div class="w-[36px] h-[36px] rounded-full bg-projectBlack box-element-shadow flex justify-center items-center">
+         <a href="https://www.instagram.com/kauanherbst_/"  target="_blank" class="w-[36px] h-[36px] rounded-full bg-projectBlack box-element-shadow flex justify-center items-center">
            <div class="bg-instagramSvg w-[24px] h-[24px]"></div>
-         </div>
-         <div class="w-[36px] h-[36px] rounded-full bg-projectBlack box-element-shadow flex justify-center items-center">
+         </a>
+         <a href="https://github.com/KauanHerbst" target="_blank" class="w-[36px] h-[36px] rounded-full bg-projectBlack box-element-shadow flex justify-center items-center">
            <div class="bg-githubSvg w-[24px] h-[24px]"></div>
-         </div>
-         <div class="w-[36px] h-[36px] rounded-full bg-projectBlack box-element-shadow flex justify-center items-center">
+         </a>
+         <a href="https://www.linkedin.com/in/kauanherbst/" target="_blank" class="w-[36px] h-[36px] rounded-full bg-projectBlack box-element-shadow flex justify-center items-center">
            <div class="bg-linkedinSvg w-[24px] h-[24px]"></div>
-         </div>
+         </a>
        </div>
       </div>
       <div>
        <div class="flex flex-col gap-4 mb-24">
-         <div class="flex flex-row gap-4 items-center">
+         <a href="#about-me" class="flex flex-row gap-4 items-center" id="link-about-me">
            <div class="w-[36px] h-[36px] bg-infoSvg bg-no-repeat"></div>
-           <span class="text-white text-lg text-element-shadow">Sobre Mim</span>
-         </div>
-         <div class="flex flex-row gap-4 items-center">
+           <span class="text-white text-lg text-element-shadow ">Sobre Mim</span>
+         </a>
+         <a href="#skills" class="flex flex-row gap-4 items-center " id="link-skills">
            <div class="w-[36px] h-[36px] bg-bookmarkSvg bg-no-repeat"></div>
            <span class="text-white text-lg text-element-shadow">Habilidades</span>
-         </div>
-         <div class="flex flex-row gap-4 items-center">
+         </a>
+         <a href="#academic" class="flex flex-row gap-4 items-center " id="link-academic">
            <div class="w-[36px] h-[36px] bg-filetextSvg bg-no-repeat"></div>
            <span class="text-white text-lg text-element-shadow">Formação</span>
-         </div>
-         <div class="flex flex-row gap-4 items-center">
+         </a>
+         <a href="#experience" class="flex flex-row gap-4 items-center" id="link-experience">
            <div class="w-[36px] h-[36px] bg-briefcaseSvg bg-no-repeat"></div>
            <span class="text-white text-lg text-element-shadow">Experiência</span>
-         </div>
-         <div class="flex flex-row gap-4 items-center">
+         </a>
+         <a href="#projects" class="flex flex-row gap-4 items-center" id="link-projects">
            <div class="w-[36px] h-[36px] bg-layersSvg bg-no-repeat"></div>
-           <span class="text-white text-lg text-element-shadow">Projetos</span>
-         </div>
+           <span class="text-white text-lg text-element-shadow ">Projetos</span>
+         </a>
        </div>
       </div>
       <div class="flex flex-col justify-center items-center">
@@ -140,7 +140,7 @@
         </div>
       </section>
 
-      <section class="w-full px-24">
+      <section class="w-full xl:h-full px-24" id="about-me">
         <div class="pt-16 pl-2">
           <h2 class="text-black text-3xl font-medium">Sobre Mim</h2>
           <div class="bg-projectBlue w-[164px] h-[8px] rounded-full"></div>
@@ -156,7 +156,7 @@
         </div>
       </section>
 
-      <section class="w-full px-24">
+      <section class="w-full xl:h-full px-24" id="skills">
         <div class="pt-16 pl-2">
           <h2 class="text-black text-3xl font-medium">Habilidades</h2>
           <div class="bg-projectBlue w-[196px] h-[8px] rounded-full"></div>
@@ -198,7 +198,7 @@
         </div>
       </section>
       
-      <section class="w-full px-24">
+      <section class="w-full px-24" id="academic">
         <div class="pt-16 pl-2">
           <h2 class="text-black text-3xl font-medium">Formação</h2>
           <div class="bg-projectBlue w-[142px] h-[8px] rounded-full"></div>
@@ -221,7 +221,7 @@
         </div>
       </section>
 
-      <section class="w-full px-24 mb-16">
+      <section class="w-full xl:h-full px-24 mb-16">
         <div class="pt-16 pl-2">
           <h2 class="text-black text-3xl font-medium">Certificados e Licenças</h2>
           <div class="bg-projectBlue w-[412px] h-[8px] rounded-full"></div>
@@ -258,7 +258,7 @@
         </div>
       </section>
 
-      <section class="w-full px-24">
+      <section class="w-full xl:h-full px-24" id="experience">
         <div class="pt-16 pl-2">
           <h2 class="text-black text-3xl font-medium">Experiência</h2>
           <div class="bg-projectBlue w-[200px] h-[8px] rounded-full"></div>
@@ -274,7 +274,7 @@
         </div>
       </section>
 
-      <section class="w-full px-24">
+      <section class="w-full xl:h-full px-24" id="projects">
         <div class="pt-16 pl-2">
           <h2 class="text-black text-3xl font-medium">Projetos</h2>
           <div class="bg-projectBlue w-[146px] h-[8px] rounded-full"></div>
@@ -296,6 +296,6 @@
       </section>
 
     </main>
-
+    <script src="js/index.js"></script>
   </body>
 </html>
