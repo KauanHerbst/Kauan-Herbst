@@ -49,17 +49,20 @@
               springSvg: "url('/src/assets/springSvg.svg')",
               tailwindcssSvg: "url('/src/assets/tailwindcssSvg.svg')",
               typescriptSvg: "url('/src/assets/typescriptSvg.svg')",
+              diplomaSvg: "url('/src/assets/diplomaSvg.svg')",
+              certificateSvg: "url('/src/assets/certificateSvg.svg')",
             },
             colors: {
               projectBlue: "#003ADF",
               projectBlack: "#1C1C1C",
+              projectGray: "#424242",
             },
           },
         },
       };
     </script>
   </head>
-  <body class="flex w-full h-[100vh]">
+  <body class="flex w-full h-[100vh] font-robotoMono">
     <div class=" w-full sm:w-[240px] h-full font-robotoMono flex flex-col items-center justify-between"></div>
     <nav class="bg-blue-gradiente w-full sm:w-[240px] h-full font-robotoMono fixed box-element-shadow flex flex-col items-center justify-between">
       <div>
@@ -104,7 +107,7 @@
        </div>
       </div>
       <div class="flex flex-col justify-center items-center">
-       <div class="bg-projectBlue flex flex-row justify-center items-center w-[148px] mb-10 rounded-lg p-2">
+       <div class="bg-projectBlue flex flex-row justify-center items-center w-[148px] mb-10 rounded-lg p-2 box-element-shadow">
          <div class="w-[36px] h-[36px] bg-downloadSvg bg-no-repeat"></div>
          <div class="text-white">Currículo</div>
        </div>
@@ -186,10 +189,73 @@
           <div class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center">
             <div class="w-[102px] h-[146px] bg-figmaSvg bg-no-repeat"></div>
           </div>
-        
         </div>
       </section>
       
+      <section class="w-full h-full px-24">
+        <div class="pt-16 pl-2">
+          <h2 class="text-black text-3xl font-medium">Formação</h2>
+          <div class="bg-projectBlue w-[142px] h-[8px] rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-2 pt-12 gap-16 px-24">
+          <div class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue ">
+            <div class="w-[48px] h-[55px] bg-diplomaSvg bg-no-repeat"></div>
+            <h4 class="font-medium text-2xl text-projectBlack">Bacharelado – Ciência da Computação</h4>
+            <span class="text-projectGray">Instituto Federal de Educação Ciência e Tecnologia do Maranhão (IFMA) – Imperatriz/Maranhão</span>
+            <span class="text-projectGray">Março 2024 - Presente</span>
+            <p class="text-xl text-projectBlack">O curso abrange desde fundamentos teóricos, como lógica, matemática e algoritmos, até áreas práticas, como programação, desenvolvimento de software, inteligência artificial, redes de computadores, sistemas operacionais, banco de dados e segurança da informação.</p>
+          </div>
+          <div class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue ">
+            <div class="w-[48px] h-[55px] bg-diplomaSvg bg-no-repeat"></div>
+            <h4 class="font-medium text-2xl text-projectBlack">Santander Coders 2024 - Front End</h4>
+            <span class="text-projectGray">Santander e Ada Tech</span>
+            <span class="text-projectGray">Julho 2024 - Dezembro 2024</span>
+            <p class="text-xl text-projectBlack">O curso aborda conceitos essenciais para o desenvolvimento web, como HTML, CSS e JavaScript, além de ferramentas avançadas como TypeScript e o Angular Framework. Também inclui programação orientada a objetos, lógica de programação e técnicas para criar frontends dinâmicos e interativos.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full h-full px-24">
+        <div class="pt-16 pl-2">
+          <h2 class="text-black text-3xl font-medium">Certificados e Licenças</h2>
+          <div class="bg-projectBlue w-[412px] h-[8px] rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-2 pt-12 gap-16 px-24">
+          <div class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue ">
+            <div class="w-[52px] h-[55px] bg-certificateSvg bg-no-repeat"></div>
+            <h4 class="font-medium text-2xl text-projectBlack">TDD – Desenvolvimento de Software Guiado por Testes</h4>
+            <span class="text-projectGray">Instituto Tecnológico de Aeronáutica (ITA) e  Coursera</span>
+            <span class="text-projectGray">2024</span>
+            <p class="text-xl text-projectBlack">O curso foca no desenvolvimento de software com Java, abordando boas práticas como testes automatizados com JUnit, desenvolvimento orientado por testes (TDD) e técnicas de refatoração de código. Também inclui métodos para garantir a qualidade e a manutenção eficiente de aplicações.</p>
+          </div>
+          <div class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue ">
+            <div class="w-[52px] h-[55px] bg-certificateSvg bg-no-repeat"></div>
+            <h4 class="font-medium text-2xl text-projectBlack">CC50 - Introdução à Ciência da Computação</h4>
+            <span class="text-projectGray">Harvard e Fundação Estudar</span>
+            <span class="text-projectGray">2023</span>
+            <p class="text-xl text-projectBlack">O curso abrange fundamentos essenciais da computação, como algoritmos e estruturas de dados, além de desenvolvimento web com HTML, CSS e JavaScript. Também inclui o uso de SQL para manipulação e gerenciamento de bancos de dados.</p>
+          </div>
+          <div class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue ">
+            <div class="w-[52px] h-[55px] bg-certificateSvg bg-no-repeat"></div>
+            <h4 class="font-medium text-2xl text-projectBlack">Santander Bootcamp 2023 - Fullstack Java+Angular</h4>
+            <span class="text-projectGray">Santander e Digital Innovation One (DIO)</span>
+            <span class="text-projectGray">2023</span>
+            <p class="text-xl text-projectBlack">O curso aborda o desenvolvimento de aplicações web completas, utilizando o Angular Framework no frontend e Java com Spring Boot no backend. Também inclui o uso do PostgreSQL para gerenciamento de bancos de dados robustos e eficientes.</p>
+          </div>
+          <div class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue ">
+            <div class="w-[52px] h-[55px] bg-certificateSvg bg-no-repeat"></div>
+            <h4 class="font-medium text-2xl text-projectBlack">Google - Data Analytics</h4>
+            <span class="text-projectGray">Google e Coursera</span>
+            <span class="text-projectGray">2023</span>
+            <p class="text-xl text-projectBlack">O curso foca em técnicas de preparação, processamento e análise de dados, utilizando ferramentas como Excel, SQL, Linguagem R e Tableau. O objetivo é capacitar para organizar, manipular e compartilhar dados de forma eficiente e visual.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full h-full px-24">
+
+      </section>
+
     </main>
 
   </body>
