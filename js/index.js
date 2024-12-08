@@ -16,7 +16,7 @@ function changeNavBarMenu() {
     sidebar.classList.add("hidden");
     divAux.classList.add("hidden");
 
-    hamburgerButton.removeEventListener("click", toggleSidebar); 
+    hamburgerButton.removeEventListener("click", toggleSidebar);
     hamburgerButton.addEventListener("click", toggleSidebar);
   } else {
     hamburgerButton.classList.add("hidden");
@@ -30,14 +30,14 @@ function toggleSidebar() {
   const hamburgerDiv = document.getElementById("img-hamburguer");
 
   if (sidebar.classList.contains("hidden")) {
-    hamburgerDiv.classList.remove("bg-justifySvg")
-    hamburgerDiv.classList.add("bg-closeSvg")
+    hamburgerDiv.classList.remove("bg-justifySvg");
+    hamburgerDiv.classList.add("bg-closeSvg");
     sidebar.classList.remove("div-disappear");
     sidebar.classList.add("div-appear");
-    sidebar.classList.remove("hidden")
+    sidebar.classList.remove("hidden");
   } else {
-    hamburgerDiv.classList.remove("bg-closeSvg")
-    hamburgerDiv.classList.add("bg-justifySvg")
+    hamburgerDiv.classList.remove("bg-closeSvg");
+    hamburgerDiv.classList.add("bg-justifySvg");
     sidebar.classList.remove("div-appear");
     sidebar.classList.add("div-disappear");
 
@@ -69,14 +69,7 @@ function resetSidebarState() {
   }
 }
 
-changeNavBarMenu();
-
-window.addEventListener("resize", () => {
-  changeNavBarMenu();
-  resetSidebarState();
-});
-
-window.addEventListener("scroll", () => {
+function updateSectionsNav() {
   let currentSection = "";
 
   sections.forEach((section) => {
@@ -101,7 +94,9 @@ window.addEventListener("scroll", () => {
       }
     }
   });
+}
 
+function buttonToHero() {
   const heroSection = document.getElementById("hero");
   const backToTopButton = document.getElementById("back-to-top");
 
@@ -114,4 +109,18 @@ window.addEventListener("scroll", () => {
     backToTopButton.classList.remove("visible");
     backToTopButton.classList.add("hidden");
   }
+}
+
+updateSectionsNav();
+buttonToHero();
+changeNavBarMenu();
+
+window.addEventListener("resize", () => {
+  changeNavBarMenu();
+  resetSidebarState();
+});
+
+window.addEventListener("scroll", () => {
+  updateSectionsNav();
+  buttonToHero();
 });

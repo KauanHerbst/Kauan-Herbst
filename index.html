@@ -52,10 +52,6 @@
               diplomaSvg: "url('assets/diplomaSvg.svg')",
               certificateSvg: "url('assets/certificateSvg.svg')",
               clipboardSvg: "url('assets/clipboardSvg.svg')",
-              literiumImg: "url('assets/literiumImg.png')",
-              vortexbankImg: "url('assets/vortexbankImg.png')",
-              adaecommerceImg: "url('assets/adaecommerceImg.png')",
-              tripsterImg: "url('assets/tripsterImg.png')",
               arrowupSvg: "url('assets/arrowupSvg.svg')",
               justifySvg: "url('assets/justifySvg.svg')",
               closeSvg: "url('assets/closeSvg.svg')",
@@ -72,7 +68,6 @@
   </head>
   <body class="flex w-full h-[100vh] font-robotoMono">
     <div id="div-aux" class="flex sm:w-[240px] h-full font-robotoMono flex flex-col items-center justify-between"></div>
-   
     <nav id="sidebar" class="flex bg-blue-gradiente sm:w-[240px] h-full font-robotoMono fixed box-element-shadow flex flex-col items-center justify-between">
       <div>
        <div class="flex flex-col justify-center items-center">
@@ -137,7 +132,7 @@
       <div class="w-[40px] h-[40px] bg-arrowupSvg"></div>
     </a>
 
-    <div id="hamburger-button" class="flex w-[50px] h-[50px] bg-projectBlue fixed z-10 rounded-full justify-center items-center box-element-shadow right-4 md:right-6 top-4 md:top-4">
+    <div id="hamburger-button" class="flex w-[50px] h-[50px] bg-projectBlue fixed z-10 rounded-full justify-center items-center box-element-shadow right-4 md:right-6 top-4 md:top-4 cursor-pointer">
       <div id="img-hamburguer" class="w-[30px] h-[30px] bg-justifySvg bg-no-repeat bg-cover bg-center"></div>
     </div>
 
@@ -152,12 +147,12 @@
         </div>
       </section>
 
-      <section class="w-full xl:h-full px-24" id="about-me">
+      <section class="w-full 2xl:h-full px-24 max-sm:px-4" id="about-me">
         <div class="pt-16 pl-2">
           <h2 class="text-black text-3xl font-medium">Sobre Mim</h2>
           <div class="bg-projectBlue w-[164px] h-[8px] rounded-full"></div>
         </div>
-        <div class="pt-32 pl-24 flex flex-row gap-4 max-lg:flex-col max-lg:pt-10">
+        <div class="pt-32 pl-24 flex flex-row gap-4 max-xl:flex-col max-xl:pt-10">
           <img src="assets/programmingSvg.svg" alt="Desenho de uma pessoa programando">
           <div class="flex justify-center items-center">
             <p class="text-xl text-projectBlack font-medium">Sou estudante de Ciência da Computação no Instituto Federal de Educação, Ciência e Tecnologia do Maranhão (IFMA), com previsão de conclusão em 2028. Tenho experiência em desenvolvimento de software, trabalhando em projetos que utilizam tecnologias como React, Angular, Java e Spring Boot.</p>
@@ -168,7 +163,7 @@
         </div>
       </section>
 
-      <section class="w-full xl:h-full px-24" id="skills">
+      <section class="w-full 2xl:h-full px-24 max-sm:px-4" id="skills">
         <div class="pt-16 pl-2">
           <h2 class="text-black text-3xl font-medium">Habilidades</h2>
           <div class="bg-projectBlue w-[196px] h-[8px] rounded-full"></div>
@@ -210,7 +205,7 @@
         </div>
       </section>
       
-      <section class="w-full px-24" id="academic">
+      <section class="w-full px-24 max-sm:px-4" id="academic">
         <div class="pt-16 pl-2">
           <h2 class="text-black text-3xl font-medium">Formação</h2>
           <div class="bg-projectBlue w-[142px] h-[8px] rounded-full"></div>
@@ -233,10 +228,10 @@
         </div>
       </section>
 
-      <section class="w-full xl:h-full px-24 mb-16">
+      <section class="w-full 2xl:h-full px-24 xl:mb-56 max-sm:px-4">
         <div class="pt-16 pl-2">
           <h2 class="text-black text-3xl font-medium">Certificados e Licenças</h2>
-          <div class="bg-projectBlue w-[412px] h-[8px] rounded-full"></div>
+          <div class="bg-projectBlue w-[412px] h-[8px] max-sm:w-[95%] rounded-full"></div>
         </div>
         <div class="grid grid-cols-2 max-2xl:grid-cols-1 max-lg:px-5 pt-12 gap-16 px-24">
           <div class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue ">
@@ -270,7 +265,7 @@
         </div>
       </section>
 
-      <section class="w-full xl:h-full px-24" id="experience">
+      <section class="w-full 2xl:h-full px-24 max-sm:px-4" id="experience">
         <div class="pt-16 pl-2">
           <h2 class="text-black text-3xl font-medium">Experiência</h2>
           <div class="bg-projectBlue w-[200px] h-[8px] rounded-full"></div>
@@ -286,23 +281,27 @@
         </div>
       </section>
 
-      <section class="w-full xl:h-full px-24" id="projects">
+      <section class="w-full 2xl:h-full px-24 max-sm:px-4" id="projects">
         <div class="pt-16 pl-2">
           <h2 class="text-black text-3xl font-medium">Projetos</h2>
           <div class="bg-projectBlue w-[146px] h-[8px] rounded-full"></div>
         </div>
-        <div class="grid grid-cols-2 max-2xl:grid-cols-1 max-lg:px-5 pt-12 gap-16 px-24">
-          <div class="border-4 border-projectBlue rounded-md w-[524px] h-[372px]">
-            <div class="w-[100%] h-[100%] bg-literiumImg bg-no-repeat bg-cover"></div>
+        <div class="grid grid-cols-2 max-lg:px-2 pt-12 gap-16 px-24 max-2xl:flex max-2xl:flex-col justify-center items-center">
+          <div class="border-4 border-projectBlue rounded-md w-[90%] sm:w-[400px] md:w-[460px] lg:w-[524px] xl:w-[524px] 
+          h-[280px] sm:h-[280px] md:h-[330px] lg:h-[372px] xl:h-[372px]">
+            <img src="assets/literiumImg.png" class="w-full h-full object-cover ">
           </div>
-          <div class="border-4 border-projectBlue rounded-md w-[524px] h-[372px]">
-            <div class="w-[100%] h-[100%] bg-vortexbankImg bg-no-repeat bg-cover"></div>
+          <div class="border-4 border-projectBlue rounded-md w-[90%] sm:w-[400px] md:w-[460px] lg:w-[524px] xl:w-[524px] 
+          h-[280px] sm:h-[280px] md:h-[330px] lg:h-[372px] xl:h-[372px]">
+            <img src="assets/vortexbankImg.png" class="w-full h-full object-cover ">
           </div>
-          <div class="border-4 border-projectBlue rounded-md w-[524px] h-[372px]">
-            <div class="w-[100%] h-[100%] bg-adaecommerceImg bg-no-repeat bg-cover"></div>
+          <div class="border-4 border-projectBlue rounded-md w-[90%] sm:w-[400px] md:w-[460px] lg:w-[524px] xl:w-[524px] 
+          h-[280px] sm:h-[280px] md:h-[330px] lg:h-[372px] xl:h-[372px]">
+            <img src="assets/adaecommerceImg.png" class="w-full h-full object-cover">
           </div>
-          <div class="border-4 border-projectBlue rounded-md w-[524px] h-[372px]">
-            <div class="w-[100%] h-[100%] bg-tripsterImg bg-no-repeat bg-cover"></div>
+          <div class="border-4 border-projectBlue rounded-md w-[90%] sm:w-[400px] md:w-[460px] lg:w-[524px] xl:w-[524px] 
+          h-[280px] sm:h-[280px] md:h-[330px] lg:h-[372px] xl:h-[372px]">
+            <img src="assets/tripsterImg.png" class="w-full h-full object-cover">
           </div>
         </div>
       </section>
