@@ -6,6 +6,76 @@ const sections = [
   { id: "projects", linkId: "link-projects" },
 ];
 
+function changeNavBarMenu() {
+  const hamburgerButton = document.getElementById("hamburger-button");
+  const sidebar = document.getElementById("sidebar");
+  const divAux = document.getElementById("div-aux");
+
+  if (window.innerWidth <= 1024) {
+    hamburgerButton.classList.remove("hidden");
+    sidebar.classList.add("hidden");
+    divAux.classList.add("hidden");
+
+    hamburgerButton.removeEventListener("click", toggleSidebar); 
+    hamburgerButton.addEventListener("click", toggleSidebar);
+  } else {
+    hamburgerButton.classList.add("hidden");
+    sidebar.classList.remove("hidden");
+    divAux.classList.remove("hidden");
+  }
+}
+
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  const hamburgerDiv = document.getElementById("img-hamburguer");
+
+  if (sidebar.classList.contains("hidden")) {
+    hamburgerDiv.classList.remove("bg-justifySvg")
+    hamburgerDiv.classList.add("bg-closeSvg")
+    sidebar.classList.remove("div-disappear");
+    sidebar.classList.add("div-appear");
+    sidebar.classList.remove("hidden")
+  } else {
+    hamburgerDiv.classList.remove("bg-closeSvg")
+    hamburgerDiv.classList.add("bg-justifySvg")
+    sidebar.classList.remove("div-appear");
+    sidebar.classList.add("div-disappear");
+
+    sidebar.addEventListener(
+      "animationend",
+      () => {
+        sidebar.classList.add("hidden");
+      },
+      { once: true }
+    );
+  }
+}
+
+function resetSidebarState() {
+  const sidebar = document.getElementById("sidebar");
+
+  if (window.innerWidth <= 1024) {
+    sidebar.classList.add("hidden");
+    sidebar.classList.remove("div-appear", "div-disappear");
+    sidebar.style.transform = "";
+    sidebar.style.opacity = "";
+    sidebar.style.visibility = "";
+  } else {
+    sidebar.classList.remove("hidden");
+    sidebar.classList.remove("div-appear", "div-disappear");
+    sidebar.style.transform = "";
+    sidebar.style.opacity = "";
+    sidebar.style.visibility = "";
+  }
+}
+
+changeNavBarMenu();
+
+window.addEventListener("resize", () => {
+  changeNavBarMenu();
+  resetSidebarState();
+});
+
 window.addEventListener("scroll", () => {
   let currentSection = "";
 

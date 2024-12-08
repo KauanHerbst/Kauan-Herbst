@@ -25,11 +25,46 @@ html {
   height: 100vh;
 }
 
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.div-appear {
+  animation: slideInLeft 0.5s ease-out forwards;
+}
+
+.div-disappear {
+  animation: slideOutRight 0.5s ease-in forwards;
+  pointer-events: none;
+}
+
 .animated-text {
   display: inline-block;
   letter-spacing: 2px;
   text-decoration: underline;
-  text-decoration-color: blue; /* Cor do sublinhado */
+  text-decoration-color: blue; 
   white-space: nowrap;
   overflow: hidden;
   font-size: 2rem;
@@ -63,6 +98,6 @@ html {
     border-right: 4px solid transparent;
   }
   100% {
-    border-right: 4px solid blue; /* Cursor piscando */
+    border-right: 4px solid blue;
   }
 }

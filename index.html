@@ -57,6 +57,8 @@
               adaecommerceImg: "url('assets/adaecommerceImg.png')",
               tripsterImg: "url('assets/tripsterImg.png')",
               arrowupSvg: "url('assets/arrowupSvg.svg')",
+              justifySvg: "url('assets/justifySvg.svg')",
+              closeSvg: "url('assets/closeSvg.svg')",
             },
             colors: {
               projectBlue: "#003ADF",
@@ -69,9 +71,9 @@
     </script>
   </head>
   <body class="flex w-full h-[100vh] font-robotoMono">
-    <div class=" sm:w-[240px] h-full font-robotoMono flex flex-col items-center justify-between"></div>
+    <div id="div-aux" class="flex sm:w-[240px] h-full font-robotoMono flex flex-col items-center justify-between"></div>
    
-    <nav class="bg-blue-gradiente sm:w-[240px] h-full font-robotoMono fixed box-element-shadow flex flex-col items-center justify-between">
+    <nav id="sidebar" class="flex bg-blue-gradiente sm:w-[240px] h-full font-robotoMono fixed box-element-shadow flex flex-col items-center justify-between">
       <div>
        <div class="flex flex-col justify-center items-center">
          <div class="w-[96px] h-[96px] bg-white rounded-full mt-10 border-4 border-projectBlue box-element-shadow bg-profile bg-cover bg-no-repeat"></div>
@@ -131,9 +133,13 @@
       </div>
      </nav>
  
-     <a href="#hero" id="back-to-top" class="w-[48px] h-[48px] bg-projectBlue fixed z-10 rounded-full flex justify-center items-center box-element-shadow right-4 bottom-4 md:right-6 md:bottom-6">
+     <a href="#hero" id="back-to-top" class="w-[50px] h-[50px] bg-projectBlue fixed z-10 rounded-full flex justify-center items-center box-element-shadow right-4 bottom-4 md:right-6 md:bottom-6">
       <div class="w-[40px] h-[40px] bg-arrowupSvg"></div>
     </a>
+
+    <div id="hamburger-button" class="flex w-[50px] h-[50px] bg-projectBlue fixed z-10 rounded-full justify-center items-center box-element-shadow right-4 md:right-6 top-4 md:top-4">
+      <div id="img-hamburguer" class="w-[30px] h-[30px] bg-justifySvg bg-no-repeat bg-cover bg-center"></div>
+    </div>
 
      <main class="w-full h-full font-robotoMono ">
 
@@ -167,7 +173,7 @@
           <h2 class="text-black text-3xl font-medium">Habilidades</h2>
           <div class="bg-projectBlue w-[196px] h-[8px] rounded-full"></div>
         </div>
-        <div class="grid grid-cols-4 pt-8 gap-4 max-xl:grid-cols-2 max-2xl:grid-cols-3 max-lg:grid-cols-1 justify-center items-center">
+        <div class="grid grid-cols-4 pt-8 gap-16 2xl:gap-6 max-lg:gap-6 max-xl:grid-cols-2 max-2xl:grid-cols-3 max-lg:flex max-lg:flex-col justify-center items-center">
           <div class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center">
             <div class="w-[232px] h-[196px] bg-htmlCssJsSvg bg-no-repeat"></div>
           </div>
