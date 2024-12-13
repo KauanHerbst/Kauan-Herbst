@@ -18,6 +18,12 @@ function changeNavBarMenu() {
 
     hamburgerButton.removeEventListener("click", toggleSidebar);
     hamburgerButton.addEventListener("click", toggleSidebar);
+
+    sections.forEach(({ linkId }) => {
+      const link = document.getElementById(linkId);
+      link.removeEventListener("click", closeSidebar);
+      link.addEventListener("click", closeSidebar);
+    });
   } else {
     hamburgerButton.classList.add("hidden");
     sidebar.classList.remove("hidden");
@@ -36,19 +42,26 @@ function toggleSidebar() {
     sidebar.classList.add("div-appear");
     sidebar.classList.remove("hidden");
   } else {
-    hamburgerDiv.classList.remove("bg-closeSvg");
-    hamburgerDiv.classList.add("bg-justifySvg");
-    sidebar.classList.remove("div-appear");
-    sidebar.classList.add("div-disappear");
-
-    sidebar.addEventListener(
-      "animationend",
-      () => {
-        sidebar.classList.add("hidden");
-      },
-      { once: true }
-    );
+    closeSidebar();
   }
+}
+
+function closeSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  const hamburgerDiv = document.getElementById("img-hamburguer");
+
+  hamburgerDiv.classList.remove("bg-closeSvg");
+  hamburgerDiv.classList.add("bg-justifySvg");
+  sidebar.classList.remove("div-appear");
+  sidebar.classList.add("div-disappear");
+
+  sidebar.addEventListener(
+    "animationend",
+    () => {
+      sidebar.classList.add("hidden");
+    },
+    { once: true }
+  );
 }
 
 function resetSidebarState() {
