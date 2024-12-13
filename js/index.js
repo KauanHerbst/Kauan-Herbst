@@ -79,6 +79,10 @@ function resetSidebarState() {
     sidebar.style.transform = "";
     sidebar.style.opacity = "";
     sidebar.style.visibility = "";
+
+    const hamburgerDiv = document.getElementById("img-hamburguer");
+    hamburgerDiv.classList.remove("bg-closeSvg");
+    hamburgerDiv.classList.add("bg-justifySvg");
   }
 }
 
