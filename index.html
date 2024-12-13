@@ -14,57 +14,7 @@
     />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              robotoMono: ['"Roboto Mono"', "monospace"],
-            },
-            backgroundImage: {
-              "blue-gradiente":
-                "linear-gradient(to right, #007BFF -120%, #024FA3 -50%, #040404 135%)",
-              "background-blue": "url('assets/background-blue.svg')",
-              "background-purple": "url('assets/background-purple.svg')",
-              profile: "url('assets/profile.jpg')",
-              instagramSvg: "url('assets/instagramSvg.svg')",
-              linkedinSvg: "url('assets/linkedinSvg.svg')",
-              githubSvg: "url('assets/githubSvg.svg')",
-              bookmarkSvg: "url('assets/bookmarkSvg.svg')",
-              briefcaseSvg: "url('assets/briefcaseSvg.svg')",
-              filetextSvg: "url('assets/filetextSvg.svg')",
-              infoSvg: "url('assets/infoSvg.svg')",
-              layersSvg: "url('assets/layersSvg.svg')",
-              downloadSvg: "url('assets/downloadSvg.svg')",
-              globeSvg: "url('assets/globeSvg.svg')",
-              programmingSvg: "url('assets/programmingSvg.svg')",
-              angularSvg: "url('assets/angularSvg.svg')",
-              figmaSvg: "url('assets/figmaSvg.svg')",
-              gitSvg: "url('assets/gitSvg.svg')",
-              htmlCssJsSvg: "url('assets/htmlCssJsSvg.svg')",
-              javaSvg: "url('assets/javaSvg.svg')",
-              mysqlSvg: "url('assets/mysqlSvg.svg')",
-              postgresqlSvg: "url('assets/postgresqlSvg.svg')",
-              reactSvg: "url('assets/reactSvg.svg')",
-              springSvg: "url('assets/springSvg.svg')",
-              tailwindcssSvg: "url('assets/tailwindcssSvg.svg')",
-              typescriptSvg: "url('assets/typescriptSvg.svg')",
-              diplomaSvg: "url('assets/diplomaSvg.svg')",
-              certificateSvg: "url('assets/certificateSvg.svg')",
-              clipboardSvg: "url('assets/clipboardSvg.svg')",
-              arrowupSvg: "url('assets/arrowupSvg.svg')",
-              justifySvg: "url('assets/justifySvg.svg')",
-              closeSvg: "url('assets/closeSvg.svg')",
-            },
-            colors: {
-              projectBlue: "#003ADF",
-              projectBlack: "#1C1C1C",
-              projectGray: "#424242",
-            },
-          },
-        },
-      };
-    </script>
+    <script src="js/tailwindConfig.js"></script>
   </head>
   <body class="flex w-full h-[100vh] font-robotoMono">
     <div id="div-aux" class="flex sm:w-[240px] h-full font-robotoMono flex flex-col items-center justify-between"></div>
@@ -87,43 +37,37 @@
        </div>
       </div>
       <div>
-       <div class="flex flex-col gap-6 mb-24 max-lg:mb-12 max-sm:gap-4 max-sm:mt-10">
+       <div class="flex flex-col gap-6 mb-24 max-lg:mb-12 max-sm:gap-3 max-sm:mt-10">
          <a href="#about-me" class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center" id="link-about-me">
-           <div class="w-[36px] h-[36px] bg-infoSvg bg-no-repeat"></div>
-           <span class="text-white text-lg text-element-shadow max-lg:text-lg">Sobre Mim</span>
+           <div class="w-[36px] h-[36px] bg-infoSvg bg-no-repeat max-sm:w-[32px] max-sm:h-[30px]]"></div>
+           <span class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md">Sobre Mim</span>
          </a>
          <a href="#skills" class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center" id="link-skills">
-           <div class="w-[36px] h-[36px] bg-bookmarkSvg bg-no-repeat"></div>
-           <span class="text-white text-lg text-element-shadow max-lg:text-lg">Habilidades</span>
+           <div class="w-[36px] h-[36px] bg-bookmarkSvg bg-no-repeat max-sm:w-[28px] max-sm:h-[32px]"></div>
+           <span class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md">Habilidades</span>
          </a>
          <a href="#academic" class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center" id="link-academic">
-           <div class="w-[36px] h-[36px] bg-filetextSvg bg-no-repeat"></div>
-           <span class="text-white text-lg text-element-shadow max-lg:text-lg">Formação</span>
+           <div class="w-[36px] h-[36px] bg-filetextSvg bg-no-repeat max-sm:w-[28px] max-sm:h-[28px]"></div>
+           <span class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md">Formação</span>
          </a>
          <a href="#experience" class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center" id="link-experience">
-           <div class="w-[36px] h-[36px] bg-briefcaseSvg bg-no-repeat"></div>
-           <span class="text-white text-lg text-element-shadow max-lg:text-lg">Experiência</span>
+           <div class="w-[36px] h-[36px] bg-briefcaseSvg bg-no-repeat max-sm:w-[28px] max-sm:h-[28px]"></div>
+           <span class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md">Experiência</span>
          </a>
          <a href="#projects" class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center" id="link-projects">
-           <div class="w-[36px] h-[36px] bg-layersSvg bg-no-repeat"></div>
-           <span class="text-white text-lg text-element-shadow max-lg:text-lg">Projetos</span>
+           <div class="w-[36px] h-[36px] bg-layersSvg bg-no-repeat max-sm:w-[28px] max-sm:h-[28px]"></div>
+           <span class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md">Projetos</span>
          </a>
        </div>
       </div>
       <div class="flex flex-col justify-center items-center">
-       <a class="bg-projectBlue flex flex-row justify-center items-center w-[148px] mb-10 rounded-lg p-2 box-element-shadow duration-300 hover:bg-[#0005BF] hover:cursor-pointer">
-         <div class="w-[36px] h-[36px] bg-downloadSvg bg-no-repeat"></div>
+       <a class="bg-projectBlue flex flex-row justify-center items-center w-[148px] mb-10 rounded-lg p-2 box-element-shadow duration-300 hover:bg-[#0005BF] hover:cursor-pointer max-sm:w-[136px] max-sm:h-[42px] max-sm:gap-2">
+         <div class="w-[36px] h-[36px] max-sm:w-[28px] max-sm:h-[28px] bg-downloadSvg bg-no-repeat"></div>
          <div class="text-white">Currículo</div>
        </a>
        <div class="flex flex-row gap-1 justify-center sm:justify-start mb-10 hover:font-bold">
          <div class="w-[24px] h-[24px] bg-globeSvg bg-no-repeat"></div>
          <span class="text-white text-md text-element-shadow hover:text-projectBlue max-lg:text-sm">English Version</span>
-       </div>
-       <div class="text-center mb-4">
-         <p class="text-white max-lg:text-sm max-sm:p-2">
-           Desenvolvido por <span class="text-projectBlue max-lg:text-sm">Kauan Herbst</span>
-         </p>
-         <p class="text-white max-lg:text-sm">© Copyright</p>
        </div>
       </div>
      </nav>
@@ -306,6 +250,14 @@
         </div>
       </section>
 
+      <section class="bg-blue-gradiente p-2">
+        <div class="text-center">
+          <p class="text-white max-lg:text-sm max-sm:p-2">
+            Desenvolvido por <span class="text-projectBlue max-lg:text-sm">Kauan Herbst</span>
+          </p>
+          <p class="text-white max-lg:text-sm">© Copyright</p>
+        </div>
+      </section>
     </main>
     <script src="js/index.js"></script>
   </body>
