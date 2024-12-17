@@ -12,80 +12,183 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwindConfig.js"></script>
   </head>
   <body class="flex w-full h-[100vh] font-robotoMono">
-    <div id="div-aux" class="flex sm:w-[240px] h-full font-robotoMono flex flex-col items-center justify-between"></div>
-    <nav id="sidebar" class="flex bg-blue-gradiente w-[240px] h-full font-robotoMono fixed box-element-shadow flex flex-col items-center justify-between max-sm:justify-center z-50">
+    <div
+      id="div-aux"
+      class="flex sm:w-[240px] h-full font-robotoMono flex flex-col items-center justify-between"
+    ></div>
+    <nav
+      id="sidebar"
+      class="flex bg-blue-gradiente w-[240px] h-full font-robotoMono fixed box-element-shadow flex flex-col items-center justify-between max-sm:justify-center z-50"
+    >
       <div>
-       <div class="flex flex-col justify-center items-center">
-         <div class="w-[96px] h-[96px] bg-white rounded-full mt-10 border-4 border-projectBlue box-element-shadow bg-profile bg-cover bg-no-repeat max-sm:mt-2"></div>
-         <span class="text-xl text-white mt-3 text-element-shadow font-medium max-lg:text-lg">Kauan Herbst</span>
-       </div>
-       <div class="mt-5 flex gap-8 justify-center sm:justify-start max-sm:gap-4 max-sm:mt-2">
-        <a href="https://www.instagram.com/kauanherbst_/"  target="_blank" class="w-[36px] h-[36px] rounded-full bg-projectBlack box-element-shadow flex justify-center items-center duration-300 hover:w-[40px] hover:h-[40px] ">
-          <div class="bg-instagramSvg w-[24px] h-[24px]"></div>
-        </a>
-         <a href="https://github.com/KauanHerbst" target="_blank" class="w-[36px] h-[36px] rounded-full bg-projectBlack box-element-shadow flex justify-center items-center duration-300 hover:w-[40px] hover:h-[40px]">
-           <div class="bg-githubSvg w-[24px] h-[24px]"></div>
-         </a>
-         <a href="https://www.linkedin.com/in/kauanherbst/" target="_blank" class="w-[36px] h-[36px] rounded-full bg-projectBlack box-element-shadow flex justify-center items-center duration-300 hover:w-[40px] hover:h-[40px]">
-           <div class="bg-linkedinSvg w-[24px] h-[24px]"></div>
-         </a>
-       </div>
+        <div class="flex flex-col justify-center items-center">
+          <div
+            class="w-[96px] h-[96px] bg-white rounded-full mt-10 border-4 border-projectBlue box-element-shadow bg-profile bg-cover bg-no-repeat max-sm:mt-2"
+          ></div>
+          <span
+            class="text-xl text-white mt-3 text-element-shadow font-medium max-lg:text-lg"
+            >Kauan Herbst</span
+          >
+        </div>
+        <div
+          class="mt-5 flex gap-8 justify-center sm:justify-start max-sm:gap-4 max-sm:mt-2"
+        >
+          <a
+            href="https://www.instagram.com/kauanherbst_/"
+            target="_blank"
+            class="w-[36px] h-[36px] rounded-full bg-projectBlack box-element-shadow flex justify-center items-center duration-300 hover:w-[40px] hover:h-[40px]"
+          >
+            <div class="bg-instagramSvg w-[24px] h-[24px]"></div>
+          </a>
+          <a
+            href="https://github.com/KauanHerbst"
+            target="_blank"
+            class="w-[36px] h-[36px] rounded-full bg-projectBlack box-element-shadow flex justify-center items-center duration-300 hover:w-[40px] hover:h-[40px]"
+          >
+            <div class="bg-githubSvg w-[24px] h-[24px]"></div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kauanherbst/"
+            target="_blank"
+            class="w-[36px] h-[36px] rounded-full bg-projectBlack box-element-shadow flex justify-center items-center duration-300 hover:w-[40px] hover:h-[40px]"
+          >
+            <div class="bg-linkedinSvg w-[24px] h-[24px]"></div>
+          </a>
+        </div>
       </div>
       <div>
-       <div class="flex flex-col gap-6 mb-24 max-lg:mb-12 max-sm:gap-3 max-sm:mt-10">
-         <a href="#about-me" class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center" id="link-about-me">
-           <div class="w-[36px] h-[36px] bg-infoSvg bg-no-repeat max-sm:w-[32px] max-sm:h-[30px]]"></div>
-           <span class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md">Sobre Mim</span>
-         </a>
-         <a href="#skills" class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center" id="link-skills">
-           <div class="w-[36px] h-[36px] bg-bookmarkSvg bg-no-repeat max-sm:w-[28px] max-sm:h-[32px]"></div>
-           <span class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md">Habilidades</span>
-         </a>
-         <a href="#academic" class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center" id="link-academic">
-           <div class="w-[36px] h-[36px] bg-filetextSvg bg-no-repeat max-sm:w-[28px] max-sm:h-[28px]"></div>
-           <span class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md">Formação</span>
-         </a>
-         <a href="#experience" class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center" id="link-experience">
-           <div class="w-[36px] h-[36px] bg-briefcaseSvg bg-no-repeat max-sm:w-[28px] max-sm:h-[28px]"></div>
-           <span class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md">Experiência</span>
-         </a>
-         <a href="#projects" class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center" id="link-projects">
-           <div class="w-[36px] h-[36px] bg-layersSvg bg-no-repeat max-sm:w-[28px] max-sm:h-[28px]"></div>
-           <span class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md">Projetos</span>
-         </a>
-       </div>
+        <div
+          class="flex flex-col gap-6 mb-24 max-lg:mb-12 max-sm:gap-3 max-sm:mt-10"
+        >
+          <a
+            href="#about-me"
+            class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center"
+            id="link-about-me"
+          >
+            <div
+              class="w-[36px] h-[36px] bg-infoSvg bg-no-repeat max-sm:w-[32px] max-sm:h-[30px]]"
+            ></div>
+            <span
+              class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md"
+              >Sobre Mim</span
+            >
+          </a>
+          <a
+            href="#skills"
+            class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center"
+            id="link-skills"
+          >
+            <div
+              class="w-[36px] h-[36px] bg-bookmarkSvg bg-no-repeat max-sm:w-[28px] max-sm:h-[32px]"
+            ></div>
+            <span
+              class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md"
+              >Habilidades</span
+            >
+          </a>
+          <a
+            href="#academic"
+            class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center"
+            id="link-academic"
+          >
+            <div
+              class="w-[36px] h-[36px] bg-filetextSvg bg-no-repeat max-sm:w-[28px] max-sm:h-[28px]"
+            ></div>
+            <span
+              class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md"
+              >Formação</span
+            >
+          </a>
+          <a
+            href="#experience"
+            class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center"
+            id="link-experience"
+          >
+            <div
+              class="w-[36px] h-[36px] bg-briefcaseSvg bg-no-repeat max-sm:w-[28px] max-sm:h-[28px]"
+            ></div>
+            <span
+              class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md"
+              >Experiência</span
+            >
+          </a>
+          <a
+            href="#projects"
+            class="flex flex-row gap-4 items-center duration-300 hover:p-1 items-center"
+            id="link-projects"
+          >
+            <div
+              class="w-[36px] h-[36px] bg-layersSvg bg-no-repeat max-sm:w-[28px] max-sm:h-[28px]"
+            ></div>
+            <span
+              class="text-white text-lg text-element-shadow max-lg:text-lg max-sm:text-md"
+              >Projetos</span
+            >
+          </a>
+        </div>
       </div>
       <div class="flex flex-col justify-center items-center">
-       <a class="bg-projectBlue flex flex-row justify-center items-center w-[148px] mb-10 rounded-lg p-2 box-element-shadow duration-300 hover:bg-[#0005BF] hover:cursor-pointer max-sm:w-[136px] max-sm:h-[42px] max-sm:gap-2">
-         <div class="w-[36px] h-[36px] max-sm:w-[28px] max-sm:h-[28px] bg-downloadSvg bg-no-repeat"></div>
-         <div class="text-white">Currículo</div>
-       </a>
-       <div class="flex flex-row gap-1 justify-center sm:justify-start mb-10 hover:font-bold">
-         <div class="w-[24px] h-[24px] bg-globeSvg bg-no-repeat"></div>
-         <a href="./en" class="text-white text-md text-element-shadow hover:text-projectBlue max-lg:text-sm">English Version</a>
-       </div>
+        <a
+          class="bg-projectBlue flex flex-row justify-center items-center w-[148px] mb-10 rounded-lg p-2 box-element-shadow duration-300 hover:bg-[#0005BF] hover:cursor-pointer max-sm:w-[136px] max-sm:h-[42px] max-sm:gap-2"
+        >
+          <div
+            class="w-[36px] h-[36px] max-sm:w-[28px] max-sm:h-[28px] bg-downloadSvg bg-no-repeat"
+          ></div>
+          <div class="text-white">Currículo</div>
+        </a>
+        <div
+          class="flex flex-row gap-1 justify-center sm:justify-start mb-10 hover:font-bold"
+        >
+          <div class="w-[24px] h-[24px] bg-globeSvg bg-no-repeat"></div>
+          <a
+            href="./en"
+            class="text-white text-md text-element-shadow hover:text-projectBlue max-lg:text-sm"
+            >English Version</a
+          >
+        </div>
       </div>
-     </nav>
- 
-     <a href="#hero" id="back-to-top" class="w-[50px] h-[50px] bg-projectBlue fixed z-10 rounded-full flex justify-center items-center box-element-shadow right-4 bottom-4 md:right-6 md:bottom-6">
+    </nav>
+
+    <a
+      href="#hero"
+      id="back-to-top"
+      class="w-[50px] h-[50px] bg-projectBlue fixed z-10 rounded-full flex justify-center items-center box-element-shadow right-4 bottom-4 md:right-6 md:bottom-6"
+    >
       <div class="w-[40px] h-[40px] bg-arrowupSvg"></div>
     </a>
 
-    <div id="hamburger-button" class="flex w-[50px] h-[50px] bg-projectBlue fixed z-10 rounded-full justify-center items-center box-element-shadow right-4 md:right-6 top-4 md:top-4 cursor-pointer">
-      <div id="img-hamburguer" class="w-[30px] h-[30px] bg-justifySvg bg-no-repeat bg-cover bg-center"></div>
+    <div
+      id="hamburger-button"
+      class="flex w-[50px] h-[50px] bg-projectBlue fixed z-10 rounded-full justify-center items-center box-element-shadow right-4 md:right-6 top-4 md:top-4 cursor-pointer"
+    >
+      <div
+        id="img-hamburguer"
+        class="w-[30px] h-[30px] bg-justifySvg bg-no-repeat bg-cover bg-center"
+      ></div>
     </div>
 
-     <main class="w-full h-full font-robotoMono ">
-
-      <section class="bg-background-blue bg-cover bg-no-repeat w-full h-full flex justify-center items-center text-white parallax" id="hero">
+    <main class="w-full h-full font-robotoMono">
+      <section
+        class="bg-background-blue bg-cover bg-no-repeat w-full h-full flex justify-center items-center text-white parallax"
+        id="hero"
+      >
         <div class="m-auto gap-4 flex flex-col">
-          <h1 class="text-4xl sm:text-6xl font-bold text-element-shadow">Kauan Herbst</h1>
-          <p class="text-2xl sm:text-3xl font-medium text-element-shadow w-full text-center sm:text-left">
+          <h1
+            class="text-4xl sm:text-6xl font-bold text-element-shadow"
+            data-aos="fade-right"
+          >
+            Kauan Herbst
+          </h1>
+          <p
+            class="text-2xl sm:text-3xl font-medium text-element-shadow w-full text-center sm:text-left"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             Desenvolvedor <span class="">FullStack</span>
           </p>
         </div>
@@ -93,221 +196,666 @@
 
       <section class="w-full 2xl:h-full px-24 max-sm:px-4" id="about-me">
         <div class="pt-16 pl-2">
-          <h2 class="text-black text-3xl font-mediu max-sm:text-2xl">Sobre Mim</h2>
-          <div class="bg-projectBlue w-[164px] h-[8px] max-sm:w-[132px] rounded-full"></div>
+          <h2
+            class="text-black text-3xl font-medium max-sm:text-2xl"
+            data-aos="fade-right"
+          >
+            Sobre Mim
+          </h2>
+          <div
+            class="bg-projectBlue w-[164px] h-[8px] max-sm:w-[132px] rounded-full"
+            data-aos="fade-right"
+            data-aos-delay="150"
+          ></div>
         </div>
-        <div class="pt-32 pl-24 flex flex-row gap-4 max-xl:flex-col max-xl:pt-10">
-          <img src="assets/programmingSvg.svg" alt="Desenho de uma pessoa programando">
-          <div class="flex justify-center items-center">
-            <p class="text-xl text-projectBlack font-medium max-sm:text-lg ">Sou estudante de Ciência da Computação no Instituto Federal de Educação, Ciência e Tecnologia do Maranhão (IFMA), com previsão de conclusão em 2028. Tenho experiência em desenvolvimento de software, trabalhando em projetos que utilizam tecnologias como React, Angular, Java e Spring Boot.</p>
+        <div
+          class="pt-32 pl-24 flex flex-row gap-4 max-xl:flex-col max-xl:pt-10"
+        >
+          <img
+            src="assets/programmingSvg.svg"
+            alt="Desenho de uma pessoa programando"
+            data-aos="fade-right"
+          />
+          <div
+            class="flex justify-center items-center"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <p class="text-xl text-projectBlack font-medium max-sm:text-lg">
+              Sou estudante de Ciência da Computação no Instituto Federal de
+              Educação, Ciência e Tecnologia do Maranhão (IFMA), com previsão de
+              conclusão em 2028. Tenho experiência em desenvolvimento de
+              software, trabalhando em projetos que utilizam tecnologias como
+              React, Angular, Java e Spring Boot.
+            </p>
           </div>
         </div>
-        <div class="pt-32 pl-24 max-lg:pt-10">
-          <p class="text-xl text-projectBlack font-medium max-sm:text-lg">Valorizo o aprendizado contínuo e estou sempre em busca de desafios que possam expandir meus conhecimentos, com foco no desenvolvimento de software, tanto em Frontend quanto Backend. Minha experiência em projetos tem me permitido aprimorar habilidades técnicas e interpessoais, como trabalho em equipe e resolução de problemas.</p>
+        <div
+          class="pt-32 pl-24 max-lg:pt-10"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
+          <p class="text-xl text-projectBlack font-medium max-sm:text-lg">
+            Valorizo o aprendizado contínuo e estou sempre em busca de desafios
+            que possam expandir meus conhecimentos, com foco no desenvolvimento
+            de software, tanto em Frontend quanto Backend. Minha experiência em
+            projetos tem me permitido aprimorar habilidades técnicas e
+            interpessoais, como trabalho em equipe e resolução de problemas.
+          </p>
         </div>
       </section>
 
       <section class="w-full 2xl:h-full px-24 max-sm:px-4" id="skills">
         <div class="pt-16 pl-2">
-          <h2 class="text-black text-3xl font-medium max-sm:text-2xl">Habilidades</h2>
-          <div class="bg-projectBlue w-[196px] h-[8px] max-sm:w-[158px] rounded-full"></div>
+          <h2
+            class="text-black text-3xl font-medium max-sm:text-2xl"
+            data-aos="fade-right"
+          >
+            Habilidades
+          </h2>
+          <div
+            class="bg-projectBlue w-[196px] h-[8px] max-sm:w-[158px] rounded-full"
+            data-aos="fade-right"
+            data-aos-delay="150"
+          ></div>
         </div>
-        <div class="grid grid-cols-4 pt-8 gap-16 2xl:gap-6 max-lg:gap-6 max-xl:grid-cols-2 max-2xl:grid-cols-3 max-lg:flex max-lg:flex-col justify-center items-center">
-          <div class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container">
+        <div
+          class="grid grid-cols-4 pt-8 gap-16 2xl:gap-6 max-lg:gap-6 max-xl:grid-cols-2 max-2xl:grid-cols-3 max-lg:flex max-lg:flex-col justify-center items-center"
+        >
+          <div
+            class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container"
+            data-aos="flip-left"
+          >
             <div class="w-[232px] h-[196px] bg-htmlCssJsSvg bg-no-repeat"></div>
             <div class="overlay">
-              <span class="font-robotoMono text-xl text-element-shadow text-projectBlue">
+              <span
+                class="font-robotoMono text-xl text-element-shadow text-projectBlue"
+              >
                 HTML, CSS E JavaScript
               </span>
             </div>
           </div>
-          <div class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container">
+          <div
+            class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container"
+            data-aos="flip-left"
+            data-aos-delay="50"
+          >
             <div class="w-[145px] h-[160px] bg-angularSvg bg-no-repeat"></div>
             <div class="overlay">
-              <span class="font-robotoMono text-xl text-element-shadow text-projectBlue">
+              <span
+                class="font-robotoMono text-xl text-element-shadow text-projectBlue"
+              >
                 Angular
               </span>
             </div>
           </div>
-          <div class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container">
+          <div
+            class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container"
+            data-aos="flip-left"
+            data-aos-delay="100"
+          >
             <div class="w-[174px] h-[174px] bg-reactSvg bg-no-repeat"></div>
             <div class="overlay">
-              <span class="font-robotoMono text-xl text-element-shadow text-projectBlue">
+              <span
+                class="font-robotoMono text-xl text-element-shadow text-projectBlue"
+              >
                 React
               </span>
             </div>
           </div>
-          <div class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container">
-            <div class="w-[132px] h-[132px] bg-typescriptSvg bg-no-repeat"></div>
+          <div
+            class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container"
+            data-aos="flip-left"
+            data-aos-delay="150"
+          >
+            <div
+              class="w-[132px] h-[132px] bg-typescriptSvg bg-no-repeat"
+            ></div>
             <div class="overlay">
-              <span class="font-robotoMono text-xl text-element-shadow text-projectBlue">
+              <span
+                class="font-robotoMono text-xl text-element-shadow text-projectBlue"
+              >
                 TypeScript
               </span>
             </div>
           </div>
-          <div class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container">
+          <div
+            class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container"
+            data-aos="flip-left"
+            data-aos-delay="200"
+          >
             <div class="w-[128px] h-[174px] bg-javaSvg bg-no-repeat"></div>
             <div class="overlay">
-              <span class="font-robotoMono text-xl text-element-shadow text-projectBlue">
+              <span
+                class="font-robotoMono text-xl text-element-shadow text-projectBlue"
+              >
                 Java
               </span>
             </div>
           </div>
-          <div class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container">
+          <div
+            class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container"
+            data-aos="flip-left"
+            data-aos-delay="250"
+          >
             <div class="w-[174px] h-[47px] bg-springSvg bg-no-repeat"></div>
             <div class="overlay">
-              <span class="font-robotoMono text-xl text-element-shadow text-projectBlue">
+              <span
+                class="font-robotoMono text-xl text-element-shadow text-projectBlue"
+              >
                 Spring
               </span>
             </div>
           </div>
-          <div class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container">
-            <div class="w-[158px] h-[163px] bg-postgresqlSvg bg-no-repeat"></div>
+          <div
+            class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container"
+            data-aos="flip-left"
+            data-aos-delay="300"
+          >
+            <div
+              class="w-[158px] h-[163px] bg-postgresqlSvg bg-no-repeat"
+            ></div>
             <div class="overlay">
-              <span class="font-robotoMono text-xl text-element-shadow text-projectBlue">
+              <span
+                class="font-robotoMono text-xl text-element-shadow text-projectBlue"
+              >
                 PostgreSQL
               </span>
             </div>
           </div>
-          <div class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container">
+          <div
+            class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container"
+            data-aos="flip-left"
+            data-aos-delay="350"
+          >
             <div class="w-[174px] h-[118px] bg-mysqlSvg bg-no-repeat"></div>
             <div class="overlay">
-              <span class="font-robotoMono text-xl text-element-shadow text-projectBlue">
+              <span
+                class="font-robotoMono text-xl text-element-shadow text-projectBlue"
+              >
                 Mysql
               </span>
             </div>
           </div>
-          <div class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container">
-            <div class="w-[204px] h-[26px] bg-tailwindcssSvg bg-no-repeat"></div>
+          <div
+            class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container"
+            data-aos="flip-left"
+            data-aos-delay="400"
+          >
+            <div
+              class="w-[204px] h-[26px] bg-tailwindcssSvg bg-no-repeat"
+            ></div>
             <div class="overlay">
-              <span class="font-robotoMono text-xl text-element-shadow text-projectBlue">
+              <span
+                class="font-robotoMono text-xl text-element-shadow text-projectBlue"
+              >
                 TailwindCSS
               </span>
             </div>
           </div>
-          <div class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container">
+          <div
+            class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container"
+            data-aos="flip-left"
+            data-aos-delay="450"
+          >
             <div class="w-[153px] h-[153px] bg-gitSvg bg-no-repeat"></div>
             <div class="overlay">
-              <span class="font-robotoMono text-xl text-element-shadow text-projectBlue">
+              <span
+                class="font-robotoMono text-xl text-element-shadow text-projectBlue"
+              >
                 Git
               </span>
             </div>
           </div>
-          <div class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container">
+          <div
+            class="w-[296px] h-[224px] border-2 border-projectBlue rounded-lg flex justify-center items-center skill-box image-container"
+            data-aos="flip-left"
+            data-aos-delay="500"
+          >
             <div class="w-[102px] h-[146px] bg-figmaSvg bg-no-repeat"></div>
             <div class="overlay">
-              <span class="font-robotoMono text-xl text-element-shadow text-projectBlue">
+              <span
+                class="font-robotoMono text-xl text-element-shadow text-projectBlue"
+              >
                 Figma
               </span>
             </div>
           </div>
         </div>
       </section>
-      
+
       <section class="w-full px-24 max-sm:px-4" id="academic">
         <div class="pt-16 pl-2">
-          <h2 class="text-black text-3xl font-medium max-sm:text-2xl">Formação</h2>
-          <div class="bg-projectBlue w-[142px] h-[8px] max-sm:w-[116px] rounded-full"></div>
+          <h2
+            class="text-black text-3xl font-medium max-sm:text-2xl"
+            data-aos="fade-right"
+          >
+            Formação
+          </h2>
+          <div
+            class="bg-projectBlue w-[142px] h-[8px] max-sm:w-[116px] rounded-full"
+            data-aos="fade-right"
+            data-aos-delay="150"
+          ></div>
         </div>
-        <div class="grid grid-cols-2 max-2xl:grid-cols-1 max-lg:px-5 pt-12 gap-16 px-24">
-          <div class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue ">
-            <div class="w-[48px] h-[55px] bg-diplomaSvg bg-no-repeat"></div>
-            <h4 class="font-medium text-2xl text-projectBlack max-sm:text-xl">Bacharelado – Ciência da Computação</h4>
-            <span class="text-projectGray">Instituto Federal de Educação Ciência e Tecnologia do Maranhão (IFMA) – Imperatriz/Maranhão</span>
-            <span class="text-projectGray">Março 2024 - Presente</span>
-            <p class="text-xl text-projectBlack max-sm:text-lg">O curso abrange desde fundamentos teóricos, como lógica, matemática e algoritmos, até áreas práticas, como programação, desenvolvimento de software, inteligência artificial, redes de computadores, sistemas operacionais, banco de dados e segurança da informação.</p>
+        <div
+          class="grid grid-cols-2 max-2xl:grid-cols-1 max-lg:px-5 pt-12 gap-16 px-24"
+        >
+          <div
+            class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue"
+            data-aos="fade-up"
+          >
+            <div
+              class="w-[48px] h-[55px] bg-diplomaSvg bg-no-repeat"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            ></div>
+            <h4
+              class="font-medium text-2xl text-projectBlack max-sm:text-xl"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Bacharelado – Ciência da Computação
+            </h4>
+            <span
+              class="text-projectGray"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              >Instituto Federal de Educação Ciência e Tecnologia do Maranhão
+              (IFMA) – Imperatriz/Maranhão</span
+            >
+            <span
+              class="text-projectGray"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              >Março 2024 - Presente</span
+            >
+            <p
+              class="text-xl text-projectBlack max-sm:text-lg"
+              data-aos="fade-up"
+              data-aos-delay="350"
+            >
+              O curso abrange desde fundamentos teóricos, como lógica,
+              matemática e algoritmos, até áreas práticas, como programação,
+              desenvolvimento de software, inteligência artificial, redes de
+              computadores, sistemas operacionais, banco de dados e segurança da
+              informação.
+            </p>
           </div>
-          <div class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue ">
-            <div class="w-[48px] h-[55px] bg-diplomaSvg bg-no-repeat"></div>
-            <h4 class="font-medium text-2xl text-projectBlack max-sm:text-xl">Santander Coders 2024 - Front End</h4>
-            <span class="text-projectGray">Santander e Ada Tech</span>
-            <span class="text-projectGray">Julho 2024 - Dezembro 2024</span>
-            <p class="text-xl text-projectBlack max-sm:text-lg">O curso aborda conceitos essenciais para o desenvolvimento web, como HTML, CSS e JavaScript, além de ferramentas avançadas como TypeScript e o Angular Framework. Também inclui programação orientada a objetos, lógica de programação e técnicas para criar frontends dinâmicos e interativos.</p>
+          <div
+            class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div
+              class="w-[48px] h-[55px] bg-diplomaSvg bg-no-repeat"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            ></div>
+            <h4
+              class="font-medium text-2xl text-projectBlack max-sm:text-xl"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Santander Coders 2024 - Front End
+            </h4>
+            <span
+              class="text-projectGray"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              >Santander e Ada Tech</span
+            >
+            <span
+              class="text-projectGray"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              >Julho 2024 - Dezembro 2024</span
+            >
+            <p
+              class="text-xl text-projectBlack max-sm:text-lg"
+              data-aos="fade-up"
+              data-aos-delay="350"
+            >
+              O curso aborda conceitos essenciais para o desenvolvimento web,
+              como HTML, CSS e JavaScript, além de ferramentas avançadas como
+              TypeScript e o Angular Framework. Também inclui programação
+              orientada a objetos, lógica de programação e técnicas para criar
+              frontends dinâmicos e interativos.
+            </p>
           </div>
         </div>
       </section>
 
       <section class="w-full 2xl:h-full px-24 xl:mb-56 max-sm:px-4">
         <div class="pt-16 pl-2">
-          <h2 class="text-black text-3xl font-medium max-sm:text-2xl">Certificados e Licenças</h2>
-          <div class="bg-projectBlue w-[412px] h-[8px]  max-sm:w-[332px] rounded-full"></div>
+          <h2
+            class="text-black text-3xl font-medium max-sm:text-2xl"
+            data-aos="fade-right"
+          >
+            Certificados e Licenças
+          </h2>
+          <div
+            data-aos="fade-right"
+            data-aos-delay="150"
+            class="bg-projectBlue w-[412px] h-[8px] max-sm:w-[332px] rounded-full"
+          ></div>
         </div>
-        <div class="grid grid-cols-2 max-2xl:grid-cols-1 max-lg:px-5 pt-12 gap-16 px-24">
-          <div class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue ">
-            <div class="w-[52px] h-[55px] bg-certificateSvg bg-no-repeat"></div>
-            <h4 class="font-medium text-2xl text-projectBlack max-sm:text-xl">TDD – Desenvolvimento de Software Guiado por Testes</h4>
-            <span class="text-projectGray">Instituto Tecnológico de Aeronáutica (ITA) e  Coursera</span>
-            <span class="text-projectGray">2024</span>
-            <p class="text-xl text-projectBlack max-sm:text-lg">O curso foca no desenvolvimento de software com Java, abordando boas práticas como testes automatizados com JUnit, desenvolvimento orientado por testes (TDD) e técnicas de refatoração de código. Também inclui métodos para garantir a qualidade e a manutenção eficiente de aplicações.</p>
+        <div
+          class="grid grid-cols-2 max-2xl:grid-cols-1 max-lg:px-5 pt-12 gap-16 px-24"
+        >
+          <div
+            class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div
+              class="w-[52px] h-[55px] bg-certificateSvg bg-no-repeat"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            ></div>
+            <h4
+              class="font-medium text-2xl text-projectBlack max-sm:text-xl"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              TDD – Desenvolvimento de Software Guiado por Testes
+            </h4>
+            <span
+              class="text-projectGray"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              >Instituto Tecnológico de Aeronáutica (ITA) e Coursera</span
+            >
+            <span
+              class="text-projectGray"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              >2024</span
+            >
+            <p
+              class="text-xl text-projectBlack max-sm:text-lg"
+              data-aos="fade-up"
+              data-aos-delay="350"
+            >
+              O curso foca no desenvolvimento de software com Java, abordando
+              boas práticas como testes automatizados com JUnit, desenvolvimento
+              orientado por testes (TDD) e técnicas de refatoração de código.
+              Também inclui métodos para garantir a qualidade e a manutenção
+              eficiente de aplicações.
+            </p>
           </div>
-          <div class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue ">
-            <div class="w-[52px] h-[55px] bg-certificateSvg bg-no-repeat"></div>
-            <h4 class="font-medium text-2xl text-projectBlack max-sm:text-xl">CC50 - Introdução à Ciência da Computação</h4>
-            <span class="text-projectGray">Harvard e Fundação Estudar</span>
-            <span class="text-projectGray">2023</span>
-            <p class="text-xl text-projectBlack max-sm:text-lg">O curso abrange fundamentos essenciais da computação, como algoritmos e estruturas de dados, além de desenvolvimento web com HTML, CSS e JavaScript. Também inclui o uso de SQL para manipulação e gerenciamento de bancos de dados.</p>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue"
+          >
+            <div
+              class="w-[52px] h-[55px] bg-certificateSvg bg-no-repeat"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            ></div>
+            <h4
+              class="font-medium text-2xl text-projectBlack max-sm:text-xl"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              CC50 - Introdução à Ciência da Computação
+            </h4>
+            <span
+              class="text-projectGray"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              >Harvard e Fundação Estudar</span
+            >
+            <span
+              class="text-projectGray"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              >2023</span
+            >
+            <p
+              class="text-xl text-projectBlack max-sm:text-lg"
+              data-aos="fade-up"
+              data-aos-delay="350"
+            >
+              O curso abrange fundamentos essenciais da computação, como
+              algoritmos e estruturas de dados, além de desenvolvimento web com
+              HTML, CSS e JavaScript. Também inclui o uso de SQL para
+              manipulação e gerenciamento de bancos de dados.
+            </p>
           </div>
-          <div class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue ">
-            <div class="w-[52px] h-[55px] bg-certificateSvg bg-no-repeat"></div>
-            <h4 class="font-medium text-2xl text-projectBlack max-sm:text-xl">Santander Bootcamp 2023 - Fullstack Java+Angular</h4>
-            <span class="text-projectGray">Santander e Digital Innovation One (DIO)</span>
-            <span class="text-projectGray">2023</span>
-            <p class="text-xl text-projectBlack max-sm:text-lg">O curso aborda o desenvolvimento de aplicações web completas, utilizando o Angular Framework no frontend e Java com Spring Boot no backend. Também inclui o uso do PostgreSQL para gerenciamento de bancos de dados robustos e eficientes.</p>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue"
+          >
+            <div
+              class="w-[52px] h-[55px] bg-certificateSvg bg-no-repeat"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            ></div>
+            <h4
+              class="font-medium text-2xl text-projectBlack max-sm:text-xl"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Santander Bootcamp 2023 - Fullstack Java+Angular
+            </h4>
+            <span
+              class="text-projectGray"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              >Santander e Digital Innovation One (DIO)</span
+            >
+            <span
+              class="text-projectGray"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              >2023</span
+            >
+            <p
+              class="text-xl text-projectBlack max-sm:text-lg"
+              data-aos="fade-up"
+              data-aos-delay="350"
+            >
+              O curso aborda o desenvolvimento de aplicações web completas,
+              utilizando o Angular Framework no frontend e Java com Spring Boot
+              no backend. Também inclui o uso do PostgreSQL para gerenciamento
+              de bancos de dados robustos e eficientes.
+            </p>
           </div>
-          <div class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue">
-            <div class="w-[52px] h-[55px] bg-certificateSvg bg-no-repeat"></div>
-            <h4 class="font-medium text-2xl text-projectBlack max-sm:text-xl">Google - Data Analytics</h4>
-            <span class="text-projectGray">Google e Coursera</span>
-            <span class="text-projectGray">2023</span>
-            <p class="text-xl text-projectBlack max-sm:text-lg">O curso foca em técnicas de preparação, processamento e análise de dados, utilizando ferramentas como Excel, SQL, Linguagem R e Tableau. O objetivo é capacitar para organizar, manipular e compartilhar dados de forma eficiente e visual.</p>
+          <div
+            class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div
+              class="w-[52px] h-[55px] bg-certificateSvg bg-no-repeat"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            ></div>
+            <h4
+              class="font-medium text-2xl text-projectBlack max-sm:text-xl"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Google - Data Analytics
+            </h4>
+            <span
+              class="text-projectGray"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              >Google e Coursera</span
+            >
+            <span
+              class="text-projectGray"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              >2023</span
+            >
+            <p
+              class="text-xl text-projectBlack max-sm:text-lg"
+              data-aos="fade-up"
+              data-aos-delay="350"
+            >
+              O curso foca em técnicas de preparação, processamento e análise de
+              dados, utilizando ferramentas como Excel, SQL, Linguagem R e
+              Tableau. O objetivo é capacitar para organizar, manipular e
+              compartilhar dados de forma eficiente e visual.
+            </p>
           </div>
         </div>
       </section>
 
       <section class="w-full 2xl:h-full px-24 max-sm:px-4" id="experience">
         <div class="pt-16 pl-2">
-          <h2 class="text-black text-3xl font-medium max-sm:text-2xl">Experiência</h2>
-          <div class="bg-projectBlue w-[200px] h-[8px] max-sm:w-[160px] rounded-full"></div>
+          <h2
+            class="text-black text-3xl font-medium max-sm:text-2xl"
+            data-aos="fade-right"
+          >
+            Experiência
+          </h2>
+          <div
+            data-aos="fade-right"
+            data-aos-delay="150"
+            class="bg-projectBlue w-[200px] h-[8px] max-sm:w-[160px] rounded-full"
+          ></div>
         </div>
-        <div class="grid grid-cols-2 max-2xl:grid-cols-1 max-lg:px-5 pt-12 gap-16 px-24">
-          <div class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue ">
-            <div class="w-[52px] h-[55px] bg-clipboardSvg bg-no-repeat"></div>
-            <h4 class="font-medium text-2xl text-projectBlack">Desenvolvedor</h4>
-            <span class="text-projectGray max-sm:text-xl">TechJr - IFMA</span>
-            <span class="text-projectGray">2024</span>
-            <p class="text-xl text-projectBlack max-sm:text-lg">A experiência profissional inclui o desenvolvimento de aplicações tanto com React para o frontend quanto com Spring Boot para o backend, em projetos distintos. Além disso, há forte comunicação com clientes e equipes para garantir o alinhamento das expectativas, e o uso de Git para versionamento de código e colaboração eficiente em equipe.</p>
+        <div
+          class="grid grid-cols-2 max-2xl:grid-cols-1 max-lg:px-5 pt-12 gap-16 px-24"
+        >
+          <div
+            class="flex flex-col gap-3 border-l-4 px-4 py-1 border-projectBlue"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div
+              class="w-[52px] h-[55px] bg-clipboardSvg bg-no-repeat"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            ></div>
+            <h4
+              class="font-medium text-2xl text-projectBlack"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Desenvolvedor
+            </h4>
+            <span
+              class="text-projectGray max-sm:text-xl"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              >TechJr - IFMA</span
+            >
+            <span
+              class="text-projectGray"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              >2024</span
+            >
+            <p
+              class="text-xl text-projectBlack max-sm:text-lg"
+              data-aos="fade-up"
+              data-aos-delay="350"
+            >
+              A experiência profissional inclui o desenvolvimento de aplicações
+              tanto com React para o frontend quanto com Spring Boot para o
+              backend, em projetos distintos. Além disso, há forte comunicação
+              com clientes e equipes para garantir o alinhamento das
+              expectativas, e o uso de Git para versionamento de código e
+              colaboração eficiente em equipe.
+            </p>
           </div>
         </div>
       </section>
 
       <section class="w-full 2xl:h-full px-24 max-sm:px-4" id="projects">
         <div class="pt-16 pl-2">
-          <h2 class="text-black text-3xl font-medium max-sm:text-2xl">Projetos</h2>
-          <div class="bg-projectBlue w-[146px] h-[8px] max-sm:w-[116px] rounded-full"></div>
+          <h2
+            class="text-black text-3xl font-medium max-sm:text-2xl"
+            data-aos="fade-right"
+          >
+            Projetos
+          </h2>
+          <div
+            class="bg-projectBlue w-[146px] h-[8px] max-sm:w-[116px] rounded-full"
+            data-aos="fade-right"
+            data-aos-delay="150"
+          ></div>
         </div>
-        <div class="grid grid-cols-2 max-lg:px-2 pt-12 gap-16 px-24 max-2xl:flex max-2xl:flex-col justify-center items-center">
-          <div class="border-4 border-projectBlue rounded-md max-lg:w-[390px]  max-lg:h-[280px] w-[524px] h-[372px] image-container">
-            <img src="assets/literiumImg.png" class="w-full h-full object-cover ">
+        <div
+          class="grid grid-cols-2 max-lg:px-2 pt-12 gap-16 px-24 max-2xl:flex max-2xl:flex-col justify-center items-center"
+        >
+          <div
+            class="border-4 border-projectBlue rounded-md max-lg:w-[364px] max-lg:h-[280px] w-[524px] h-[372px] image-container"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <img
+              src="assets/literiumImg.png"
+              class="w-full h-full object-cover"
+            />
             <div class="overlay">
-              <a href="https://github.com/KauanHerbst/React-Literium-Project" target="_blank" class="button bg-projectBlue hover:bg-[#0005BF]">Link Projeto</a>
+              <a
+                href="https://github.com/KauanHerbst/React-Literium-Project"
+                target="_blank"
+                class="button bg-projectBlue hover:bg-[#0005BF]"
+                >Link Projeto</a
+              >
             </div>
           </div>
-          <div class="border-4 border-projectBlue rounded-md max-lg:w-[390px] max-lg:h-[280px] w-[524px] h-[372px] image-container">
-            <img src="assets/vortexbankImg.png" class="w-full h-full object-cover ">
+          <div
+            class="border-4 border-projectBlue rounded-md max-lg:w-[364px] max-lg:h-[280px] w-[524px] h-[372px] image-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="assets/vortexbankImg.png"
+              class="w-full h-full object-cover"
+            />
             <div class="overlay">
-              <a href="https://github.com/KauanHerbst/NextJs-Vortex-Bank-Project" target="_blank" class="button bg-projectBlue hover:bg-[#0005BF]">Link Projeto</a>
+              <a
+                href="https://github.com/KauanHerbst/NextJs-Vortex-Bank-Project"
+                target="_blank"
+                class="button bg-projectBlue hover:bg-[#0005BF]"
+                >Link Projeto</a
+              >
             </div>
           </div>
-          <div class="border-4 border-projectBlue rounded-md max-lg:w-[390px] max-lg:h-[280px] w-[524px] h-[372px] image-container">
-            <img src="assets/adaecommerceImg.png" class="w-full h-full object-cover">
+          <div
+            class="border-4 border-projectBlue rounded-md max-lg:w-[364px] max-lg:h-[280px] w-[524px] h-[372px] image-container"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <img
+              src="assets/adaecommerceImg.png"
+              class="w-full h-full object-cover"
+            />
             <div class="overlay">
-              <a href="https://github.com/KauanHerbst/Santander-Coders-e-Commerce" target="_blank" class="button bg-projectBlue hover:bg-[#0005BF]">Link Projeto</a>
+              <a
+                href="https://github.com/KauanHerbst/Santander-Coders-e-Commerce"
+                target="_blank"
+                class="button bg-projectBlue hover:bg-[#0005BF]"
+                >Link Projeto</a
+              >
             </div>
           </div>
-          <div class="border-4 border-projectBlue rounded-md max-lg:w-[390px] max-lg:h-[280px] w-[524px] h-[372px] image-container">
-            <img src="assets/tripsterImg.png" class="w-full h-full object-cover">
+          <div
+            class="border-4 border-projectBlue rounded-md max-lg:w-[364px] max-lg:h-[280px] w-[524px] h-[372px] image-container"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img
+              src="assets/tripsterImg.png"
+              class="w-full h-full object-cover"
+            />
             <div class="overlay">
-              <a href="https://github.com/EuJohnnyBravo/Santander-Coders-Angular-I" target="_blank" class="button bg-projectBlue hover:bg-[#0005BF]">Link Projeto</a>
+              <a
+                href="https://github.com/EuJohnnyBravo/Santander-Coders-Angular-I"
+                target="_blank"
+                class="button bg-projectBlue hover:bg-[#0005BF]"
+                >Link Projeto</a
+              >
             </div>
           </div>
         </div>
@@ -316,12 +864,15 @@
       <section class="bg-blue-gradiente p-2 mt-2">
         <div class="text-center">
           <p class="text-white max-lg:text-sm max-sm:p-2">
-            Desenvolvido por <span class="text-projectBlue max-lg:text-sm">Kauan Herbst</span>
+            Desenvolvido por
+            <span class="text-projectBlue max-lg:text-sm">Kauan Herbst</span>
           </p>
           <p class="text-white max-lg:text-sm">© Copyright</p>
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
