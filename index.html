@@ -14,7 +14,57 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/tailwindConfig.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              robotoMono: ['"Roboto Mono"', "monospace"],
+            },
+            backgroundImage: {
+              "blue-gradiente":
+                "linear-gradient(to right, #007BFF -120%, #024FA3 -50%, #040404 135%)",
+              "background-blue": "url('../assets/background-blue.svg')",
+              "background-purple": "url('../assets/background-purple.svg')",
+              profile: "url('../assets/profile.jpg')",
+              instagramSvg: "url('../assets/instagramSvg.svg')",
+              linkedinSvg: "url('../assets/linkedinSvg.svg')",
+              githubSvg: "url('../assets/githubSvg.svg')",
+              bookmarkSvg: "url('../assets/bookmarkSvg.svg')",
+              briefcaseSvg: "url('../assets/briefcaseSvg.svg')",
+              filetextSvg: "url('../assets/filetextSvg.svg')",
+              infoSvg: "url('../assets/infoSvg.svg')",
+              layersSvg: "url('../assets/layersSvg.svg')",
+              downloadSvg: "url('../assets/downloadSvg.svg')",
+              globeSvg: "url('../assets/globeSvg.svg')",
+              programmingSvg: "url('../assets/programmingSvg.svg')",
+              angularSvg: "url('../assets/angularSvg.svg')",
+              figmaSvg: "url('../assets/figmaSvg.svg')",
+              gitSvg: "url('../assets/gitSvg.svg')",
+              htmlCssJsSvg: "url('../assets/htmlCssJsSvg.svg')",
+              javaSvg: "url('../assets/javaSvg.svg')",
+              mysqlSvg: "url('../assets/mysqlSvg.svg')",
+              postgresqlSvg: "url('../assets/postgresqlSvg.svg')",
+              reactSvg: "url('../assets/reactSvg.svg')",
+              springSvg: "url('../assets/springSvg.svg')",
+              tailwindcssSvg: "url('../assets/tailwindcssSvg.svg')",
+              typescriptSvg: "url('../assets/typescriptSvg.svg')",
+              diplomaSvg: "url('../assets/diplomaSvg.svg')",
+              certificateSvg: "url('../assets/certificateSvg.svg')",
+              clipboardSvg: "url('../assets/clipboardSvg.svg')",
+              arrowupSvg: "url('../assets/arrowupSvg.svg')",
+              justifySvg: "url('../assets/justifySvg.svg')",
+              closeSvg: "url('../assets/closeSvg.svg')",
+            },
+            colors: {
+              projectBlue: "#003ADF",
+              projectBlack: "#1C1C1C",
+              projectGray: "#424242",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="flex w-full h-[100vh] font-robotoMono">
     <div
@@ -203,7 +253,7 @@
             Sobre Mim
           </h2>
           <div
-            class="bg-projectBlue w-[164px] h-[8px] max-sm:w-[132px] rounded-full"
+            class="bg-projectBlue w-[164px] h-[8px] max-sm:w-[116px] rounded-full"
             data-aos="fade-right"
             data-aos-delay="150"
           ></div>
@@ -424,7 +474,7 @@
         </div>
       </section>
 
-      <section class="w-full px-24 max-sm:px-4" id="academic">
+      <section class="w-full px-24 max-sm:px-4 " id="academic">
         <div class="pt-16 pl-2">
           <h2
             class="text-black text-3xl font-medium max-sm:text-2xl"
@@ -707,8 +757,8 @@
         </div>
       </section>
 
-      <section class="w-full 2xl:h-full px-24 max-sm:px-4" id="experience">
-        <div class="pt-16 pl-2">
+      <section class="w-full 2xl:h-full px-24 max-sm:px-4 lg:mt-[50vh] h-lg:mt-90 " id="experience">
+        <div class="pl-2">
           <h2
             class="text-black text-3xl font-medium max-sm:text-2xl"
             data-aos="fade-right"
@@ -861,7 +911,7 @@
         </div>
       </section>
 
-      <section class="bg-blue-gradiente p-2 mt-2">
+      <section class="bg-blue-gradiente p-2 mt-2 max-h-sm:mt-48 ">
         <div class="text-center">
           <p class="text-white max-lg:text-sm max-sm:p-2">
             Desenvolvido por
