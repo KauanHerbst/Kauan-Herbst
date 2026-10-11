@@ -1,1 +1,0 @@
-AOS.init({ disable: 'mobile', once: true, duration: 1000 });
