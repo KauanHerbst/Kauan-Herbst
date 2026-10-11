@@ -1,0 +1,3 @@
+Instrument Serif (c) The Instrument Serif Project Authors (https://github.com/Instrument/instrument-serif)
+Space Grotesk (c) The Space Grotesk Project Authors (https://github.com/floriankarsten/space-grotesk)
+Both are licensed under the SIL Open Font License, Version 1.1: https://openfontlicense.org
