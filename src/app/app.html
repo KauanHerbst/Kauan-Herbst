@@ -1,0 +1,19 @@
+<app-site-nav />
+<main id="conteudo" class="contents">
+  <app-hero />
+  @defer (on idle; hydrate on idle) {
+    <app-about class="panel" />
+    <app-timeline-section class="panel" sectionId="experiencia" [entries]="experience()" />
+    <app-timeline-section class="panel" sectionId="formacao" [entries]="education()" />
+    <app-projects class="panel" [projects]="projects" />
+    <app-skills class="panel" />
+    <app-contact class="panel" />
+    <app-built-with class="panel" />
+  } @placeholder {
+    <div class="min-h-svh"></div>
+  }
+</main>
+@defer (on idle; hydrate on idle) {
+  <app-site-footer />
+}
+<app-back-to-top />
