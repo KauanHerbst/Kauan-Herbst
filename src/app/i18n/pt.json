@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "htmlLang": "pt-BR",
+    "title": "Kauan Herbst | Eng. Software",
+    "description": "Kauan Herbst, engenheiro de software full stack (PHP/Laravel, React, Angular, TypeScript). Experiência, formação, projetos e contato."
+  },
+  "nav": {
+    "skip": "Pular para o conteúdo",
+    "main": "Principal",
+    "footer": "Rodapé",
+    "sobre": "Sobre",
+    "experiencia": "Experiência",
+    "formacao": "Formação",
+    "projetos": "Projetos",
+    "skills": "Skills",
+    "contato": "Contato",
+    "menu": "Menu",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "cvLabel": "Baixar currículo",
+    "cvTitle": "Currículo",
+    "cvHint": "Baixe meu currículo em português ou inglês.",
+    "langLabel": "Mudar idioma",
+    "langTitle": "Idioma",
+    "langHint": "Veja o portfólio em português ou inglês.",
+    "backToTop": "Voltar ao topo"
+  },
+  "profile": {
+    "role": "Engenheiro de Software Full Stack",
+    "tagline": "PHP / Laravel · React · Angular · TypeScript.",
+    "statement": "Transformo regras de negócio complexas em software simples de usar.",
+    "bio": "Engenheiro de software full stack com 3 anos de experiência, hoje atuando como pleno em um software integrado de gestão de varejo, onde trabalho com PHP e Laravel no backend e React e TypeScript no frontend. Mantenho o Herbst UI, biblioteca open source de componentes Angular. Formado em Engenharia de Software e cursando Ciência da Computação no IFMA.",
+    "hints": {
+      "GitHub": "Projetos pessoais, o Herbst UI e experimentos em código.",
+      "LinkedIn": "Carreira, experiência profissional e contato direto.",
+      "Instagram": "Bastidores, setup e o dia a dia de desenvolvimento."
+    }
+  },
+  "hero": {
+    "social": "Redes sociais",
+    "cta": "Conhecer",
+    "talk": "Falar comigo"
+  },
+  "about": {
+    "artAlt": "Pixel art de uma mesa com computador, caneca e planta"
+  },
+  "experience": [
+    {
+      "period": "fev 2025 — atual",
+      "title": "Engenheiro de Software Pleno",
+      "place": "Voreli · Software Integrado de Gestão de Varejo · Imperatriz, MA",
+      "highlights": [
+        "Levo o sistema para a segunda geração da plataforma sem parar a operação dos clientes, migrando dados e regras módulo a módulo para a arquitetura modular por domínio.",
+        "Desenvolvo o backend em PHP e Laravel seguindo Cruddy by Design: controllers enxutos nos verbos REST e a regra de negócio isolada em actions.",
+        "Sustento ERP, PDV, fiscal, estoque, financeiro, CRM, e-commerce e cobrança recorrente no mesmo produto.",
+        "Mantenho os domínios independentes entre si, com as fronteiras entre camadas validadas automaticamente e as decisões de arquitetura registradas em ADRs.",
+        "Tirei as operações pesadas do tempo de resposta do usuário com filas e eventos em Redis, otimização de rotas e de queries no banco.",
+        "Entreguei as telas do produto em React e TypeScript sobre Design System próprio.",
+        "Barro regressão antes do merge com TDD em Pest, Vitest e Playwright, CI/CD no GitHub Actions e monitoramento no Sentry."
+      ]
+    },
+    {
+      "period": "dez 2024 — abr 2025",
+      "title": "Desenvolvedor Full Stack",
+      "place": "Zeta Coders · Plataforma de cursos e e-commerce · Imperatriz, MA",
+      "highlights": [
+        "Coloquei no ar a área educacional e o e-commerce no mesmo sistema, com APIs REST e regras de negócio em Express.",
+        "Entreguei as telas funcionando em desktop e mobile, traduzindo os fluxos do Figma em interfaces React.",
+        "Padronizei os ambientes de desenvolvimento e deploy da equipe com Docker."
+      ]
+    },
+    {
+      "period": "2024 — 2025",
+      "title": "Desenvolvedor Voluntário",
+      "place": "TechJr (IFMA) · Empresa Júnior · Imperatriz, MA",
+      "highlights": [
+        "Entreguei projetos da empresa júnior como desenvolvedor, dentro de equipes com divisão de tarefas.",
+        "Destravei colegas em início de carreira orientando dúvidas técnicas e revisando código."
+      ]
+    },
+    {
+      "period": "mar 2023 — fev 2025",
+      "title": "Desenvolvedor Web Full Stack",
+      "place": "Freelance · Projetos para clientes finais · Remoto",
+      "highlights": [
+        "Entreguei APIs REST em produção para clientes finais, com controle de acesso por perfil, em Java com Spring Boot e em NestJS.",
+        "Sustentei as regras de cada cliente em bases consistentes, modelando dados em MySQL, PostgreSQL e MongoDB.",
+        "Conduzi projetos de ponta a ponta, do requisito ao deploy, com interfaces em React e Angular e esteiras de CI/CD."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "period": "fev 2023 — jun 2026",
+      "title": "Bacharelado em Engenharia de Software",
+      "place": "Universidade Norte do Paraná (UNOPAR)",
+      "description": "Concluído."
+    },
+    {
+      "period": "mar 2024 — cursando",
+      "title": "Bacharelado em Ciência da Computação",
+      "place": "Instituto Federal do Maranhão (IFMA)",
+      "description": "Em andamento."
+    }
+  ],
+  "projects": {
+    "tech": "Tecnologias",
+    "view": "Ver projeto",
+    "code": "Ver código",
+    "team": "Em equipe · Santander Coders",
+    "items": {
+      "herbst-ui": {
+        "name": "Herbst UI",
+        "description": "Biblioteca de componentes para Angular em que o código é seu: a CLI copia cada componente para dentro do projeto, sem dependência travada. Documentação em português e inglês, com exemplos ao vivo e temas claro e escuro."
+      },
+      "literium": {
+        "name": "Literium",
+        "description": "E-commerce de livros prototipado no Figma: SPA em React com sessão do usuário e uma API em Spring Boot para usuários, livros, categorias, pedidos e favoritos, com autenticação JWT."
+      },
+      "vortex": {
+        "name": "Vortex Bank",
+        "description": "Banco digital com contas, carteiras, transações e notificações em tempo real por WebSocket. A API em Spring Boot usa JWT, criptografia AES e migrations com Flyway; o app em Next.js tem landing e área logada."
+      },
+      "trips": {
+        "name": "Gerenciador de viagens",
+        "description": "App em Angular para planejar viagens: cadastro e edição, participantes, busca e status de cada viagem, com os dados salvos no navegador."
+      },
+      "ecommerce": {
+        "name": "E-commerce Santander Coders",
+        "description": "Loja feita em TypeScript sem framework, com componentes próprios, catálogo com filtro, carrinho e login com JWT consumindo uma API."
+      }
+    }
+  },
+  "skills": {
+    "carousel": "Linguagens e tecnologias",
+    "expand": "Ver lista completa",
+    "collapse": "Recolher lista",
+    "groups": {
+      "languages": "Linguagens",
+      "backend": "Back-end",
+      "frontend": "Front-end",
+      "data": "Dados",
+      "devops": "DevOps",
+      "tests": "Testes"
+    },
+    "items": [
+      {
+        "title": "Arquitetura de software",
+        "description": "Sistemas que crescem sem virar bagunça: responsabilidades claras, baixo acoplamento e decisões técnicas bem fundamentadas."
+      },
+      {
+        "title": "APIs e back-end",
+        "description": "Serviços e APIs seguros, consistentes e fáceis de integrar, com regras de negócio bem definidas."
+      },
+      {
+        "title": "Performance",
+        "description": "Trabalho pesado fora da resposta do usuário com filas e eventos; rotas e queries otimizadas."
+      },
+      {
+        "title": "Interfaces e design systems",
+        "description": "Interfaces consistentes, acessíveis e responsivas, construídas sobre componentes reutilizáveis."
+      },
+      {
+        "title": "Qualidade e entrega",
+        "description": "Testes automatizados, revisão de código e entrega contínua para lançar com confiança e frequência."
+      },
+      {
+        "title": "Dados e migrações",
+        "description": "Modelagem relacional e migrações de plataforma módulo a módulo, sem parar a operação."
+      }
+    ],
+    "usage": {
+      "PHP": "Back-end do sistema de gestão de varejo em produção, junto com o Laravel.",
+      "TypeScript": "Padrão em todo front-end e nas APIs em Node, com tipagem de ponta a ponta.",
+      "JavaScript": "A base de tudo no navegador: scripts, integrações e manutenção de código legado.",
+      "Java": "APIs REST em produção para clientes, com Spring Boot e Spring Security.",
+      "Python": "Scripts, automações e análise de dados.",
+      "R": "Análise estatística e visualização de dados.",
+      "SQL": "Modelagem, migrations e otimização de consultas em bancos relacionais.",
+      "Laravel": "Framework principal do back-end no dia a dia, com actions, filas e eventos.",
+      "NestJS": "APIs com controle de acesso por perfil em projetos para clientes.",
+      "Express.js": "APIs REST de uma plataforma de cursos com e-commerce.",
+      "Node.js": "Runtime das APIs e das ferramentas de build e CLI, como a do Herbst UI.",
+      "Spring Boot": "APIs REST em Java com autenticação e controle de acesso por perfil.",
+      "React": "Telas do produto em produção, construídas sobre um design system próprio.",
+      "Angular": "Projetos front-end e o Herbst UI, minha biblioteca de componentes.",
+      "Next.js": "Aplicações React com renderização no servidor.",
+      "Tailwind CSS": "Estilização dos projetos recentes, incluindo este portfólio e o Herbst UI.",
+      "Vite": "Build e servidor de desenvolvimento dos projetos front-end.",
+      "PostgreSQL": "Banco principal em produção, com modelagem relacional e migrations.",
+      "MySQL": "Bases de dados de projetos para clientes.",
+      "MongoDB": "Dados com esquema flexível em projetos que pedem isso.",
+      "Redis": "Filas e eventos para tirar trabalho pesado do tempo de resposta.",
+      "Docker": "Ambientes padronizados de desenvolvimento e deploy para o time.",
+      "Git": "Versionamento com Conventional Commits, branches e code review."
+    }
+  },
+  "contact": {
+    "available": "Disponível",
+    "headline": "Vamos construir algo juntos?",
+    "lead": "Projeto, oportunidade ou só uma ideia para trocar? Mande uma mensagem ou me encontre nas redes.",
+    "email": "E-mail",
+    "copy": "Copiar e-mail",
+    "copied": "E-mail copiado",
+    "form": "Mande uma mensagem",
+    "name": "Nome",
+    "message": "Mensagem",
+    "hint": "Abre seu app de e-mail com a mensagem pronta.",
+    "send": "Enviar mensagem",
+    "subject": "Contato pelo portfólio"
+  },
+  "builtWith": {
+    "eyebrow": "Feito com",
+    "text": "Este portfólio foi feito com o Herbst UI, minha biblioteca open source de componentes para Angular. O carrossel, a timeline, os cards e o formulário que você viu aqui vêm dela.",
+    "cta": "Conhecer o Herbst UI",
+    "code": "Código no GitHub"
+  },
+  "a11y": {
+    "newTab": "(abre em nova aba)"
+  }
+}

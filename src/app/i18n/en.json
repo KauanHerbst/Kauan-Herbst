@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "htmlLang": "en",
+    "title": "Kauan Herbst | Software Eng.",
+    "description": "Kauan Herbst, full stack software engineer (PHP/Laravel, React, Angular, TypeScript). Experience, education, projects and contact."
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "main": "Main",
+    "footer": "Footer",
+    "sobre": "About",
+    "experiencia": "Experience",
+    "formacao": "Education",
+    "projetos": "Projects",
+    "skills": "Skills",
+    "contato": "Contact",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "cvLabel": "Download resume",
+    "cvTitle": "Resume",
+    "cvHint": "Download my resume in Portuguese or English.",
+    "langLabel": "Change language",
+    "langTitle": "Language",
+    "langHint": "View the portfolio in Portuguese or English.",
+    "backToTop": "Back to top"
+  },
+  "profile": {
+    "role": "Full Stack Software Engineer",
+    "tagline": "PHP / Laravel · React · Angular · TypeScript.",
+    "statement": "I turn complex business rules into software that is simple to use.",
+    "bio": "Full stack software engineer with 3 years of experience, currently working as a Pleno engineer on an integrated retail management software, where I work with PHP and Laravel on the backend and React and TypeScript on the frontend. I maintain Herbst UI, an open source Angular component library. Bachelor's degree in Software Engineering and currently pursuing Computer Science at IFMA.",
+    "hints": {
+      "GitHub": "Personal projects, Herbst UI and code experiments.",
+      "LinkedIn": "Career, professional experience and direct contact.",
+      "Instagram": "Behind the scenes, setup and day-to-day development."
+    }
+  },
+  "hero": {
+    "social": "Social networks",
+    "cta": "Explore",
+    "talk": "Get in touch"
+  },
+  "about": {
+    "artAlt": "Pixel art of a desk with a computer, a mug and a plant"
+  },
+  "experience": [
+    {
+      "period": "Feb 2025 — present",
+      "title": "Pleno Software Engineer",
+      "place": "Voreli · Integrated Retail Management Software · Imperatriz, MA",
+      "highlights": [
+        "Moving the system to the platform's second generation without stopping customer operations, migrating data and rules module by module to a domain-based modular architecture.",
+        "Building the backend in PHP and Laravel following Cruddy by Design: lean controllers on REST verbs and business logic isolated in actions.",
+        "Supporting ERP, POS, tax, inventory, finance, CRM, e-commerce and recurring billing in a single product.",
+        "Keeping domains independent from each other, with layer boundaries validated automatically and architecture decisions recorded in ADRs.",
+        "Took heavy operations out of the user's response time with Redis queues and events, plus route and database query optimization.",
+        "Delivered the product's screens in React and TypeScript on top of an in-house Design System.",
+        "Block regressions before merge with TDD in Pest, Vitest and Playwright, CI/CD on GitHub Actions and monitoring with Sentry."
+      ]
+    },
+    {
+      "period": "Dec 2024 — Apr 2025",
+      "title": "Full Stack Developer",
+      "place": "Zeta Coders · Online courses and e-commerce platform · Imperatriz, MA",
+      "highlights": [
+        "Launched the learning area and the e-commerce in the same system, with REST APIs and business rules in Express.",
+        "Delivered screens that work on desktop and mobile, turning Figma flows into React interfaces.",
+        "Standardized the team's development and deployment environments with Docker."
+      ]
+    },
+    {
+      "period": "2024 — 2025",
+      "title": "Volunteer Developer",
+      "place": "TechJr (IFMA) · Junior Enterprise · Imperatriz, MA",
+      "highlights": [
+        "Delivered junior enterprise projects as a developer, working in teams with shared tasks.",
+        "Unblocked early-career peers by answering technical questions and reviewing code."
+      ]
+    },
+    {
+      "period": "Mar 2023 — Feb 2025",
+      "title": "Full Stack Web Developer",
+      "place": "Freelance · Projects for end clients · Remote",
+      "highlights": [
+        "Delivered production REST APIs for end clients, with role-based access control, in Java with Spring Boot and in NestJS.",
+        "Kept each client's rules on consistent foundations, modeling data in MySQL, PostgreSQL and MongoDB.",
+        "Led projects end to end, from requirements to deployment, with React and Angular interfaces and CI/CD pipelines."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "period": "Feb 2023 — Jun 2026",
+      "title": "Bachelor's Degree in Software Engineering",
+      "place": "Universidade Norte do Paraná (UNOPAR)",
+      "description": "Completed."
+    },
+    {
+      "period": "Mar 2024 — present",
+      "title": "Bachelor's Degree in Computer Science",
+      "place": "Instituto Federal do Maranhão (IFMA)",
+      "description": "In progress."
+    }
+  ],
+  "projects": {
+    "tech": "Technologies",
+    "view": "View project",
+    "code": "View code",
+    "team": "Team project · Santander Coders",
+    "items": {
+      "herbst-ui": {
+        "name": "Herbst UI",
+        "description": "Angular component library where the code is yours: the CLI copies each component into your project, with no locked-in dependency. Documentation in Portuguese and English, with live examples and light and dark themes."
+      },
+      "literium": {
+        "name": "Literium",
+        "description": "Book e-commerce prototyped in Figma: a React SPA with user sessions and a Spring Boot API for users, books, categories, orders and favorites, with JWT authentication."
+      },
+      "vortex": {
+        "name": "Vortex Bank",
+        "description": "Digital bank with accounts, wallets, transactions and real-time notifications over WebSocket. The Spring Boot API uses JWT, AES encryption and Flyway migrations; the Next.js app has a landing page and a logged-in area."
+      },
+      "trips": {
+        "name": "Trip planner",
+        "description": "Angular app for planning trips: create and edit trips, participants, search and status for each trip, with data saved in the browser."
+      },
+      "ecommerce": {
+        "name": "Santander Coders E-commerce",
+        "description": "Store built in TypeScript with no framework, with custom components, a filterable catalog, cart and JWT login consuming an API."
+      }
+    }
+  },
+  "skills": {
+    "carousel": "Languages and technologies",
+    "expand": "See full list",
+    "collapse": "Collapse list",
+    "groups": {
+      "languages": "Languages",
+      "backend": "Back-end",
+      "frontend": "Front-end",
+      "data": "Data",
+      "devops": "DevOps",
+      "tests": "Testing"
+    },
+    "items": [
+      {
+        "title": "Software architecture",
+        "description": "Systems that grow without turning into a mess: clear responsibilities, low coupling and well-grounded technical decisions."
+      },
+      {
+        "title": "APIs and back-end",
+        "description": "Secure, consistent services and APIs that are easy to integrate, with well-defined business rules."
+      },
+      {
+        "title": "Performance",
+        "description": "Heavy work kept out of the user's response with queues and events; optimized routes and queries."
+      },
+      {
+        "title": "Interfaces and design systems",
+        "description": "Consistent, accessible and responsive interfaces, built on reusable components."
+      },
+      {
+        "title": "Quality and delivery",
+        "description": "Automated tests, code review and continuous delivery to ship with confidence and often."
+      },
+      {
+        "title": "Data and migrations",
+        "description": "Relational modeling and platform migrations module by module, without stopping operations."
+      }
+    ],
+    "usage": {
+      "PHP": "Back-end of the retail management system in production, together with Laravel.",
+      "TypeScript": "Standard across every front-end and the Node APIs, with end-to-end typing.",
+      "JavaScript": "The foundation of everything in the browser: scripts, integrations and legacy code maintenance.",
+      "Java": "Production REST APIs for clients, with Spring Boot and Spring Security.",
+      "Python": "Scripts, automation and data analysis.",
+      "R": "Statistical analysis and data visualization.",
+      "SQL": "Modeling, migrations and query optimization in relational databases.",
+      "Laravel": "Main back-end framework day to day, with actions, queues and events.",
+      "NestJS": "APIs with role-based access control in client projects.",
+      "Express.js": "REST APIs for an online course platform with e-commerce.",
+      "Node.js": "Runtime for APIs and for build and CLI tooling, like the Herbst UI CLI.",
+      "Spring Boot": "REST APIs in Java with authentication and role-based access control.",
+      "React": "Product screens in production, built on an in-house design system.",
+      "Angular": "Front-end projects and Herbst UI, my component library.",
+      "Next.js": "React applications with server-side rendering.",
+      "Tailwind CSS": "Styling for recent projects, including this portfolio and Herbst UI.",
+      "Vite": "Build tool and dev server for front-end projects.",
+      "PostgreSQL": "Main production database, with relational modeling and migrations.",
+      "MySQL": "Databases for client projects.",
+      "MongoDB": "Flexible-schema data in projects that call for it.",
+      "Redis": "Queues and events to take heavy work out of the response time.",
+      "Docker": "Standardized development and deployment environments for the team.",
+      "Git": "Version control with Conventional Commits, branches and code review."
+    }
+  },
+  "contact": {
+    "available": "Available",
+    "headline": "Shall we build something together?",
+    "lead": "A project, an opportunity or just an idea to talk through? Send me a message or find me on social media.",
+    "email": "Email",
+    "copy": "Copy email",
+    "copied": "Email copied",
+    "form": "Send a message",
+    "name": "Name",
+    "message": "Message",
+    "hint": "Opens your email app with the message ready.",
+    "send": "Send message",
+    "subject": "Contact from portfolio"
+  },
+  "builtWith": {
+    "eyebrow": "Built with",
+    "text": "This portfolio was built with Herbst UI, my open source Angular component library. The carousel, timeline, cards and form you saw here all come from it.",
+    "cta": "Explore Herbst UI",
+    "code": "Code on GitHub"
+  },
+  "a11y": {
+    "newTab": "(opens in a new tab)"
+  }
+}
