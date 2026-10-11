@@ -1,0 +1,6 @@
+{
+  "componentsDir": "src/app/shared/ui",
+  "alias": "@shared/ui",
+  "stylesPath": "src/styles.css",
+  "iconProvider": "phosphor"
+}
