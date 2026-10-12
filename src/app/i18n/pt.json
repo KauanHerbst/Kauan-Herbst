@@ -2,7 +2,7 @@
   "meta": {
     "htmlLang": "pt-BR",
     "title": "Kauan Herbst | Eng. Software",
-    "description": "Kauan Herbst, engenheiro de software full stack (PHP/Laravel, React, Angular, TypeScript). Experiência, formação, projetos e contato."
+    "description": "Kauan Herbst é engenheiro de software e programador full stack em Imperatriz, MA. PHP, Laravel, React, Angular e TypeScript. Projetos, experiência e contato."
   },
   "nav": {
     "skip": "Pular para o conteúdo",
@@ -29,7 +29,7 @@
     "role": "Engenheiro de Software Full Stack",
     "tagline": "PHP / Laravel · React · Angular · TypeScript.",
     "statement": "Transformo regras de negócio complexas em software simples de usar.",
-    "bio": "Engenheiro de software full stack com 3 anos de experiência, hoje atuando como pleno em um software integrado de gestão de varejo, onde trabalho com PHP e Laravel no backend e React e TypeScript no frontend. Mantenho o Herbst UI, biblioteca open source de componentes Angular. Formado em Engenharia de Software e cursando Ciência da Computação no IFMA.",
+    "bio": "Engenheiro de software e programador full stack de Imperatriz (MA), com 3 anos de experiência, hoje atuando como pleno em um software integrado de gestão de varejo, onde trabalho com PHP e Laravel no backend e React e TypeScript no frontend. Mantenho o Herbst UI, biblioteca open source de componentes Angular. Formado em Engenharia de Software e cursando Ciência da Computação no IFMA.",
     "hints": {
       "GitHub": "Projetos pessoais, o Herbst UI e experimentos em código.",
       "LinkedIn": "Carreira, experiência profissional e contato direto.",

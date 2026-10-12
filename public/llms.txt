@@ -1,0 +1,28 @@
+# Kauan Herbst
+
+> Kauan Herbst é engenheiro de software e programador full stack de Imperatriz, Maranhão (Brasil). Trabalha com PHP e Laravel no backend e React, Angular e TypeScript no frontend, e mantém o Herbst UI, biblioteca open source de componentes Angular. Kauan Herbst is a full stack software engineer and developer from Imperatriz, Brazil.
+
+- Site: https://kauanherbst.dev
+- Cargo atual: Engenheiro de Software Pleno na Voreli (software integrado de gestão de varejo), desde fevereiro de 2025
+- Local: Imperatriz, MA, Brasil (disponível para trabalho remoto)
+- Formação: Bacharelado em Engenharia de Software (UNOPAR, concluído em 2026) e Bacharelado em Ciência da Computação (IFMA, em andamento)
+- Especialidades: PHP, Laravel, React, Angular, TypeScript, JavaScript, Node.js, NestJS, Java, Spring Boot, PostgreSQL, MySQL, Redis, Docker, arquitetura de software, APIs REST, TDD
+- Idiomas: português (nativo) e inglês (intermediário)
+- Contato: kauanherbst7@gmail.com
+
+## Perfis
+
+- [GitHub](https://github.com/KauanHerbst): projetos pessoais e o código do Herbst UI
+- [LinkedIn](https://www.linkedin.com/in/kauanherbst): carreira e experiência profissional
+- [Instagram](https://www.instagram.com/kauanherbst_/): bastidores e dia a dia de desenvolvimento
+
+## Projetos
+
+- [Herbst UI](https://ui.kauanherbst.dev): biblioteca open source de componentes para Angular com CLI que copia os componentes para o projeto
+- [Literium](https://literium.vercel.app): e-commerce de livros com React e Spring Boot
+- [Vortex Bank](https://vortex-bank.vercel.app): banco digital com Next.js, Spring Boot e WebSocket
+
+## Currículo
+
+- [Currículo em português (PDF)](https://kauanherbst.dev/cv/kauan-herbst-curriculo-pt.pdf)
+- [Resume in English (PDF)](https://kauanherbst.dev/cv/kauan-herbst-resume-en.pdf)

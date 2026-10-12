@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Kauan Herbst, engenheiro de software full stack (PHP/Laravel, React, Angular, TypeScript). Experiência, formação, projetos e contato."
+      content="Kauan Herbst é engenheiro de software e programador full stack em Imperatriz, MA. PHP, Laravel, React, Angular e TypeScript. Projetos, experiência e contato."
     />
     <meta name="author" content="Kauan Herbst" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
     <meta name="theme-color" content="#08070C" />
     <meta name="color-scheme" content="dark" />
     <link rel="canonical" href="https://kauanherbst.dev/" />
@@ -19,14 +23,18 @@
     <meta property="og:url" content="https://kauanherbst.dev/" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:locale:alternate" content="en_US" />
-    <meta property="og:title" content="Kauan Herbst — Engenheiro de Software Full Stack" />
+    <meta
+      property="og:title"
+      content="Kauan Herbst | Engenheiro de Software e Programador Full Stack"
+    />
     <meta
       property="og:description"
-      content="Kauan Herbst, engenheiro de software full stack (PHP/Laravel, React, Angular, TypeScript). Experiência, formação, projetos e contato."
+      content="Kauan Herbst é engenheiro de software e programador full stack em Imperatriz, MA. PHP, Laravel, React, Angular e TypeScript. Projetos, experiência e contato."
     />
     <meta property="og:image" content="https://kauanherbst.dev/og.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta
       property="og:image:alt"
       content="Kauan Herbst, Engenheiro de Software Full Stack, ao lado de um retrato em pixel art"
@@ -34,10 +42,13 @@
     <meta property="profile:first_name" content="Kauan" />
     <meta property="profile:last_name" content="Herbst" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Kauan Herbst — Engenheiro de Software Full Stack" />
+    <meta
+      name="twitter:title"
+      content="Kauan Herbst | Engenheiro de Software e Programador Full Stack"
+    />
     <meta
       name="twitter:description"
-      content="Kauan Herbst, engenheiro de software full stack (PHP/Laravel, React, Angular, TypeScript). Experiência, formação, projetos e contato."
+      content="Kauan Herbst é engenheiro de software e programador full stack em Imperatriz, MA. PHP, Laravel, React, Angular e TypeScript. Projetos, experiência e contato."
     />
     <meta name="twitter:image" content="https://kauanherbst.dev/og.jpg" />
 
@@ -61,40 +72,130 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Kauan Herbst",
-        "alternateName": "Kauan Herbst de Sousa Goveia",
-        "jobTitle": "Engenheiro de Software Full Stack",
-        "url": "https://kauanherbst.dev/",
-        "image": "https://kauanherbst.dev/og.jpg",
-        "email": "mailto:kauanherbst7@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Imperatriz",
-          "addressRegion": "MA",
-          "addressCountry": "BR"
-        },
-        "worksFor": { "@type": "Organization", "name": "Voreli" },
-        "alumniOf": [
-          { "@type": "CollegeOrUniversity", "name": "Universidade Norte do Paraná (UNOPAR)" },
-          { "@type": "CollegeOrUniversity", "name": "Instituto Federal do Maranhão (IFMA)" }
-        ],
-        "knowsAbout": [
-          "PHP",
-          "Laravel",
-          "React",
-          "Angular",
-          "TypeScript",
-          "Node.js",
-          "NestJS",
-          "Spring Boot",
-          "PostgreSQL",
-          "Docker"
-        ],
-        "sameAs": [
-          "https://github.com/KauanHerbst",
-          "https://www.linkedin.com/in/kauanherbst",
-          "https://www.instagram.com/kauanherbst_/"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://kauanherbst.dev/#website",
+            "url": "https://kauanherbst.dev/",
+            "name": "Kauan Herbst",
+            "alternateName": "Kauan Herbst | Engenheiro de Software",
+            "inLanguage": ["pt-BR", "en"],
+            "publisher": {
+              "@id": "https://kauanherbst.dev/#kauan-herbst"
+            }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://kauanherbst.dev/#profile",
+            "url": "https://kauanherbst.dev/",
+            "name": "Kauan Herbst | Engenheiro de Software e Programador Full Stack",
+            "description": "Kauan Herbst é engenheiro de software e programador full stack em Imperatriz, MA. PHP, Laravel, React, Angular e TypeScript. Projetos, experiência e contato.",
+            "inLanguage": "pt-BR",
+            "isPartOf": {
+              "@id": "https://kauanherbst.dev/#website"
+            },
+            "mainEntity": {
+              "@id": "https://kauanherbst.dev/#kauan-herbst"
+            },
+            "dateModified": "2026-10-12"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://kauanherbst.dev/#kauan-herbst",
+            "name": "Kauan Herbst",
+            "alternateName": ["Kauan Herbst de Sousa Goveia", "Kauan"],
+            "givenName": "Kauan",
+            "familyName": "Herbst",
+            "jobTitle": [
+              "Engenheiro de Software Full Stack",
+              "Programador Full Stack",
+              "Full Stack Software Engineer"
+            ],
+            "description": "Engenheiro de software e programador full stack de Imperatriz (MA), Brasil. Trabalha com PHP e Laravel no backend e React, Angular e TypeScript no frontend, e mantém o Herbst UI, biblioteca open source de componentes Angular.",
+            "url": "https://kauanherbst.dev/",
+            "image": "https://kauanherbst.dev/og.jpg",
+            "email": "kauanherbst7@gmail.com",
+            "nationality": {
+              "@type": "Country",
+              "name": "Brasil"
+            },
+            "homeLocation": {
+              "@type": "Place",
+              "name": "Imperatriz, Maranhão, Brasil",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Imperatriz",
+                "addressRegion": "MA",
+                "addressCountry": "BR"
+              }
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Imperatriz",
+              "addressRegion": "MA",
+              "addressCountry": "BR"
+            },
+            "hasOccupation": [
+              {
+                "@type": "Occupation",
+                "name": "Engenheiro de Software",
+                "occupationLocation": {
+                  "@type": "City",
+                  "name": "Imperatriz, MA"
+                },
+                "skills": "PHP, Laravel, React, Angular, TypeScript, Node.js, PostgreSQL, Docker"
+              },
+              {
+                "@type": "Occupation",
+                "name": "Programador Full Stack",
+                "occupationLocation": {
+                  "@type": "City",
+                  "name": "Imperatriz, MA"
+                }
+              }
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Voreli"
+            },
+            "alumniOf": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Universidade Norte do Paraná (UNOPAR)"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Instituto Federal do Maranhão (IFMA)"
+              }
+            ],
+            "knowsAbout": [
+              "Engenharia de software",
+              "Desenvolvimento web",
+              "Programação",
+              "PHP",
+              "Laravel",
+              "React",
+              "Angular",
+              "TypeScript",
+              "JavaScript",
+              "Node.js",
+              "NestJS",
+              "Java",
+              "Spring Boot",
+              "PostgreSQL",
+              "MySQL",
+              "Docker",
+              "Arquitetura de software",
+              "APIs REST"
+            ],
+            "knowsLanguage": ["pt-BR", "en"],
+            "sameAs": [
+              "https://github.com/KauanHerbst",
+              "https://www.linkedin.com/in/kauanherbst",
+              "https://www.instagram.com/kauanherbst_/",
+              "https://ui.kauanherbst.dev"
+            ]
+          }
         ]
       }
     </script>

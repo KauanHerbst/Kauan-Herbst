@@ -2,7 +2,7 @@
   "meta": {
     "htmlLang": "en",
     "title": "Kauan Herbst | Software Eng.",
-    "description": "Kauan Herbst, full stack software engineer (PHP/Laravel, React, Angular, TypeScript). Experience, education, projects and contact."
+    "description": "Kauan Herbst is a full stack software engineer and developer from Imperatriz, Brazil. PHP, Laravel, React, Angular and TypeScript. Projects, experience and contact."
   },
   "nav": {
     "skip": "Skip to content",
@@ -29,7 +29,7 @@
     "role": "Full Stack Software Engineer",
     "tagline": "PHP / Laravel · React · Angular · TypeScript.",
     "statement": "I turn complex business rules into software that is simple to use.",
-    "bio": "Full stack software engineer with 3 years of experience, currently working as a Pleno engineer on an integrated retail management software, where I work with PHP and Laravel on the backend and React and TypeScript on the frontend. I maintain Herbst UI, an open source Angular component library. Bachelor's degree in Software Engineering and currently pursuing Computer Science at IFMA.",
+    "bio": "Full stack software engineer and developer from Imperatriz, Brazil, with 3 years of experience, currently working as a Pleno engineer on an integrated retail management software, where I work with PHP and Laravel on the backend and React and TypeScript on the frontend. I maintain Herbst UI, an open source Angular component library. Bachelor's degree in Software Engineering and currently pursuing Computer Science at IFMA.",
     "hints": {
       "GitHub": "Personal projects, Herbst UI and code experiments.",
       "LinkedIn": "Career, professional experience and direct contact.",
